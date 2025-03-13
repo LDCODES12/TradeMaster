@@ -2019,3 +2019,1130 @@ LINE 1: SELECT * FROM trades WHERE date(entry_time) = ? OR date(exit...
 2025-03-13 13:05:13,416 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
 2025-03-13 13:05:13,416 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
 2025-03-13 13:05:13,416 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 14:19:21,070 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:19:21,093 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:19:21,093 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:19:21,116 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:19:21,314 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:19:23,045 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:19:23,045 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:19:23,045 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:19:23,045 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:19:23,045 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:19:23,045 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:19:23,045 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:19:23,046 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:19:23,046 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"0c56a5984fd41ea9173e6cc7963fb03d","message":"Your plan does
+2025-03-13 14:19:23,046 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:19:23,046 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:19:23,051 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:19:23,051 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:19:23,070 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:23,080 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:23,080 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:23,080 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:23,080 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:23,080 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:23,080 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:19:24,449 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:19:24,450 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:19:24,450 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:19:24,457 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:19:24,553 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:19:26,027 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:19:26,027 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:19:26,027 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:19:26,027 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:19:26,027 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:19:26,027 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:19:26,027 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:19:26,027 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:19:26,027 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"207d5557138d0ccf379ae49bfaaa64b7","message":"Your plan does
+2025-03-13 14:19:26,027 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:19:26,027 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:19:26,028 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:19:26,029 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:19:26,032 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:26,032 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:26,032 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:26,032 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:26,032 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:26,032 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:19:26,032 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:19:26,197 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 14:19:26,198 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 14:19:26,198 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 14:19:26,198 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 14:19:26,198 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 14:19:26,198 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 14:19:26,198 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 14:19:26,201 - core.trading_system - INFO - Setting up market data stream for 1103 symbols
+2025-03-13 14:19:26,201 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 14:19:26,201 - core.trading_system - INFO - Trading system activated
+2025-03-13 14:19:26,354 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 14:19:26,421 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 14:19:26,426 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:19:26,436 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 14:19:26,436 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 14:19:26,436 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 14:19:26,436 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 14:24:26,037 - apscheduler.executors.default - INFO - Running job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 14:24:26 EDT)" (scheduled at 2025-03-13 14:24:26.032531-04:00)
+2025-03-13 14:24:26,278 - apscheduler.executors.default - INFO - Job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 14:29:26 EDT)" executed successfully
+2025-03-13 14:30:12,477 - apscheduler.executors.default - WARNING - Run time of job "TradingSystem.trading_cycle (trigger: interval[0:10:00], next run at: 2025-03-13 14:39:26 EDT)" was missed by 0:00:46.445322
+2025-03-13 14:30:12,478 - apscheduler.executors.default - WARNING - Run time of job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 14:34:26 EDT)" was missed by 0:00:46.445740
+2025-03-13 14:34:26,036 - apscheduler.executors.default - INFO - Running job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 14:39:26 EDT)" (scheduled at 2025-03-13 14:34:26.032531-04:00)
+2025-03-13 14:34:26,347 - apscheduler.executors.default - INFO - Job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 14:39:26 EDT)" executed successfully
+2025-03-13 14:37:15,498 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:37:15,518 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:37:15,519 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:37:15,538 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:37:15,733 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:37:17,484 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:37:17,484 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:37:17,484 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:37:17,484 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:37:17,484 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:37:17,484 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:37:17,484 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:37:17,484 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:37:17,484 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"62802c1e68e47ab0c74412d8ca394469","message":"Your plan does
+2025-03-13 14:37:17,484 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:37:17,484 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:37:17,485 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:37:17,485 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:37:17,492 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:17,501 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:17,501 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:17,501 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:17,501 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:17,501 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:17,502 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:37:19,462 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:37:19,464 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:37:19,464 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:37:19,470 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:37:19,579 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:37:20,739 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:37:20,739 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:37:20,739 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:37:20,739 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:37:20,739 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:37:20,739 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:37:20,740 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:37:20,740 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:37:20,740 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"8f71a8f1fa2974ac6937e5e23a9fa90c","message":"Your plan does
+2025-03-13 14:37:20,740 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:37:20,740 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:37:20,744 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:37:20,744 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:37:20,749 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:20,750 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:20,750 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:20,750 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:20,750 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:20,750 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:37:20,751 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:37:20,849 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 14:37:20,849 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 14:37:20,849 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 14:37:20,850 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 14:37:20,850 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 14:37:20,850 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 14:37:20,850 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 14:37:20,858 - core.trading_system - INFO - Setting up market data stream for 1103 symbols
+2025-03-13 14:37:20,859 - utils.market_data_stream - INFO - Market data stream started for 1103 symbols
+2025-03-13 14:37:20,859 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 14:37:20,859 - core.trading_system - INFO - Trading system activated
+2025-03-13 14:37:20,859 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:20,860 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:20,860 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:20,860 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:21,025 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 14:37:21,098 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 14:37:21,099 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:37:21,102 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 14:37:21,103 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 14:37:21,103 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 14:37:21,103 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 14:37:21,361 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:21,513 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:21,513 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:21,513 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:21,514 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:21,514 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:21,514 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:22,015 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:22,081 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:22,081 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-142' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:22,090 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:22,090 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:22,090 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:22,091 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:22,091 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:22,593 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:22,661 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:22,661 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-145' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:22,665 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:22,665 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:22,665 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:22,666 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:22,666 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:23,168 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:23,238 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:23,238 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-147' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:23,240 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:23,240 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:23,240 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:23,240 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:23,240 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:23,741 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:23,800 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:23,800 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-150' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:23,801 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:23,802 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:23,802 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:23,802 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:23,802 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:24,303 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:24,366 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:24,366 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-153' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:24,368 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:24,368 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:24,368 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:24,368 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:24,368 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:24,870 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:24,930 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:24,931 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-155' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:24,934 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:24,934 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:24,934 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:24,934 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:24,934 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:25,436 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:25,503 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:25,503 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-158' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:25,506 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:25,507 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:25,507 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:25,507 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:25,507 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:26,009 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:26,073 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:26,073 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-160' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:26,077 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:26,077 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:26,077 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:26,077 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:26,077 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:26,578 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:26,645 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:26,645 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-163' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:26,648 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:26,649 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:26,649 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:26,649 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:26,649 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:27,151 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:27,219 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:27,220 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-165' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:27,223 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:27,223 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:27,223 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:27,223 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:27,223 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:27,725 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:27,788 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:27,788 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-168' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:27,791 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:27,791 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:27,791 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:27,791 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:27,792 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:28,293 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:28,358 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:28,358 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-171' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:28,360 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:28,360 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:28,360 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:28,360 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:28,360 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:28,861 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:28,927 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:28,927 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-173' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:28,930 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:28,931 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:28,931 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:28,931 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:28,931 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:29,433 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:29,498 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:29,499 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-176' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:29,503 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:29,503 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:29,503 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:29,504 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:29,504 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:30,005 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:30,071 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:30,072 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-178' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:30,075 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:30,076 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:30,076 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:30,076 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:30,076 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:30,578 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:30,642 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:30,643 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-181' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:30,646 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:30,647 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:30,647 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:30,647 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:30,647 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:31,149 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:31,221 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:31,222 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-183' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:31,225 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:31,226 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:31,226 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:31,226 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:31,227 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:31,728 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:31,798 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:31,799 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-186' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:31,803 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:31,803 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:31,804 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:31,804 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:31,804 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:32,306 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:32,375 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:32,376 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-189' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:32,380 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:32,380 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:32,380 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:32,381 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:32,381 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:32,883 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:32,945 - utils.market_data_stream - ERROR - Stream running error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:32,946 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-191' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:32,949 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:32,950 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:32,950 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:32,950 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:32,951 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:37:33,452 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:37:33,453 - utils.market_data_stream - ERROR - Stream running error: cannot schedule new futures after shutdown
+2025-03-13 14:37:33,454 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-194' coro=<MarketDataStreamManager._run_stream() done, defined at /Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py:213> exception=SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')>
+Traceback (most recent call last):
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/trading_system/utils/market_data_stream.py", line 218, in _run_stream
+    await self.stream._start_ws()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 134, in _start_ws
+    await self._connect()
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/alpaca/data/live/websocket.py", line 98, in _connect
+    self._ws = await websockets_legacy.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/liam/PycharmProjects/TrueTradeMaster/.venv/lib/python3.13/site-packages/websockets/legacy/client.py", line 652, in __await_impl__
+    _transport, protocol = await self._create_connection()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1193, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 1226, in _create_connection_transport
+    await waiter
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 581, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/sslproto.py", line 563, in _do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/ssl.py", line 951, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)
+2025-03-13 14:37:33,457 - utils.market_data_stream - ERROR - Error closing WebSocket: 'NoneType' object has no attribute 'close'
+2025-03-13 14:37:33,457 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:37:33,458 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:37:33,458 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:37:33,458 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:47:16,713 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:47:16,733 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:47:16,734 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:47:16,756 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:47:16,894 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:47:18,234 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:47:18,234 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:47:18,234 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:47:18,234 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:47:18,235 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:47:18,235 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:47:18,235 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:47:18,235 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:47:18,235 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"8af46b57cc95d23d151eebffaa5a3b21","message":"Your plan does
+2025-03-13 14:47:18,235 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:47:18,235 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:47:18,238 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:47:18,239 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:47:18,246 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:18,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:18,258 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:18,259 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:18,259 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:18,259 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:18,259 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:47:20,534 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:47:20,536 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:47:20,536 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:47:20,542 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:47:20,646 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:47:22,145 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:47:22,145 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:47:22,145 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:47:22,145 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:47:22,146 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:47:22,146 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:47:22,146 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:47:22,146 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:47:22,146 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"f5da70e5e379348e5f632af207fcde2d","message":"Your plan does
+2025-03-13 14:47:22,146 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:47:22,146 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:47:22,149 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:47:22,149 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:47:22,153 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:22,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:22,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:22,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:22,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:22,154 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:22,155 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:47:22,252 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 14:47:22,253 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 14:47:22,253 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 14:47:22,253 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 14:47:22,253 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 14:47:22,254 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 14:47:22,254 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 14:47:22,263 - core.trading_system - INFO - Setting up market data stream for 1103 symbols
+2025-03-13 14:47:22,263 - utils.market_data_stream - INFO - Market data stream started for 1103 symbols
+2025-03-13 14:47:22,263 - utils.market_data_stream - INFO - Initializing market data stream connection
+2025-03-13 14:47:22,263 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 14:47:22,263 - utils.market_data_stream - INFO - Setting up trade subscription for 1103 symbols
+2025-03-13 14:47:22,263 - core.trading_system - INFO - Trading system activated
+2025-03-13 14:47:22,264 - utils.market_data_stream - INFO - Setting up quote subscription for 1103 symbols
+2025-03-13 14:47:22,264 - utils.market_data_stream - INFO - Setting up bar subscription for 1103 symbols
+2025-03-13 14:47:22,432 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 14:47:22,502 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 14:47:22,506 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:47:22,514 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 14:47:22,515 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 14:47:22,515 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 14:47:22,515 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 14:47:22,765 - alpaca.data.live.websocket - INFO - connecting to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:47:22,945 - alpaca.data.live.websocket - INFO - connected to wss://stream.data.alpaca.markets/v2/iex
+2025-03-13 14:47:22,947 - utils.market_data_stream - INFO - Sent subscription request: {'action': 'subscribe', 'trades': ['GRI', 'CBAT', 'BCLI', 'APOG', 'ACIU', 'DTI', 'SOHO', 'LIEN', 'QBAK', 'KLXE', 'FORA', 'UNCY', 'ADVM', 'WATT', 'RGNX', 'GCTS', 'EICCF', 'BK', 'HGBL', 'POLA', 'CFNB', 'DAL', 'ITOS', 'MNPR', 'BFNH', 'HOFV', 'KAVL', 'AKTX', 'ACRV', 'INIS', 'PTMN', 'RCAT', 'PANL', 'IVDA', 'LPRO', 'MSM', 'ENZN', 'TH', 'SOWG', 'ANTX', 'HHS', 'STTK', 'CALC', 'SMTC', 'SOBR', 'NGNE', 'BODI', 'CNXC', 'HBSI', 'VTDRF', 'ZVSA', 'CELZ', 'AMPE', 'AHNR', 'CYTOF', 'CLIR', 'YTENQ', 'SALM', 'EQS', 'CCLD', 'MTEX', 'MIST', 'PLX', 'ARTL', 'DNMR', 'MLKN', 'NIO', 'PHUN', 'FCUV', 'CTM', 'CEAD', 'AMPX', 'NOAH', 'MVST', 'JVA', 'MCRB', 'NMEX', 'PVLA', 'LIFD', 'NIMU', 'FUL', 'UG', 'IPDN', 'RBCN', 'YTFD', 'CELC', 'OCX', 'APYP', 'BFRI', 'IDN', 'HUMA', 'PBSV', 'HTCR', 'SHCO', 'UGRO', 'POET', 'HQY', 'RSKIA', 'HSCS', 'COE', 'DARE', 'FFLO', 'ELSE', 'MKC', 'BYSD', 'FEMY', 'HPI', 'NCNA', 'TELA', 'WBA', 'VERI', 'BBNX', 'CAAS', 'BTCS', 'LQDA', 'MVIS', 'VTYX', 'APRE', 'PCLB', 'ABEO', 'OPAL', 'BCOW', 'CGTX', 'CEIN', 'MTEM', 'UAMY', 'HOUR', 'NBY', 'UNF', 'SURG', 'PMCB', 'PFHO', 'DDDX', 'CMRF', 'KALA', 'MQT', 'UAVS', 'ASFT', 'PDD', 'QUBT', 'XPOF', 'CTSO', 'TATT', 'SHMN', 'KODK', 'LOGN', 'FALC', 'STCB', 'AVAH', 'AREB', 'CNBB', 'SMPL', 'LU', 'MTVA', 'CAAP', 'ACLX', 'FSI', 'ALVR', 'TBIO', 'AUID', 'RDI', 'RYES', 'CNNC', 'REKR', 'VUZI', 'APLD', 'BEAT', 'PRPL', 'WISA', 'JKS', 'OKUR', 'VCNX', 'BYOC', 'CGNT', 'SAIC', 'VIRC', 'CVV', 'GLYC', 'TISI', 'TNYA', 'VIRX', 'NUTX', 'PRST', 'LEAT', 'CODA', 'SFES', 'STRR', 'XLO', 'RMTI', 'MJNA', 'GNLX', 'SLRN', 'TIL', 'SIG', 'UEEC', 'BLBX', 'PHGE', 'BRGX', 'VSEE', 'TTAN', 'FET', 'TYRA', 'VEEE', 'AAME', 'GRDN', 'IDR', 'STNE', 'BEEM', 'GIFT', 'GEDC', 'INLX', 'CHMX', 'PENG', 'LFLY', 'SLGL', 'DOCU', 'CYTH', 'JQC', 'ICAD', 'CBNT', 'LNZA', 'QBTS', 'DQWS', 'GPFT', 'PVCT', 'TMRC', 'PESI', 'PGID', 'UEC', 'AYRO', 'ZNOG', 'NNUP', 'AYI', 'TYCB', 'KLNG', 'WOR', 'BLNK', 'BCAB', 'ATNF', 'UNTC', 'BATL', 'GOEV', 'GALT', 'STCN', 'AFYA', 'CNTY', 'AGRO', 'DHCC', 'IRON', 'SELF', 'RJDG', 'AGSS', 'IVCBF', 'KVAC', 'NTIC', 'CAWW', 'ATPC', 'BRTX', 'VFF', 'ECBK', 'TLCC', 'MDAI', 'CURR', 'ZEPP', 'HOTH', 'NTIP', 'BMRA', 'BSVN', 'TMC', 'KINS', 'CLPR', 'FGEN', 'KC', 'BIORQ', 'FDS', 'AIRS', 'ANRO', 'TSQ', 'CRTG', 'MGNX', 'DTST', 'ZOM', 'SDST', 'MBRX', 'TSVT', 'RDUS', 'CWGL', 'SKYE', 'INAB', 'EXSR', 'STZ', 'QXO', 'FUFU', 'LEVI', 'MUEL', 'IPSC', 'PIKM', 'TENX', 'EESE', 'CYBL', 'PAVM', 'JFIN', 'YI', 'DLTI', 'TG', 'ADIL', 'SHIP', 'GIII', 'EVTV', 'KRON', 'VKSC', 'GYRE', 'PORT', 'CHSCP', 'OVID', 'LVDW', 'OTLC', 'BABB', 'NRXS', 'GULTU', 'PLSH', 'BICX', 'LOVE', 'TACT', 'CARM', 'IDWM', 'UTGN', 'CONNQ', 'AFCG', 'MYD', 'BLUE', 'WDFC', 'ONFO', 'LCTC', 'QTRX', 'HYZN', 'SOND', 'BZUN', 'TRAW', 'CMCT', 'FULO', 'RLBY', 'DOMH', 'CMCL', 'CADL', 'PROP', 'TSBX', 'TSAT', 'BIAF', 'SNAL', 'GRYP', 'BMTM', 'NOTE', 'WHLM', 'DSS', 'INTI', 'AMEN', 'ELDN', 'RIBT', 'MRC', 'CNSP', 'TREP', 'FLXT', 'GBR', 'FVR', 'CNXX', 'KLC', 'MYNZ', 'YQ', 'RLMD', 'KRRO', 'HOFT', 'IKNA', 'OBLG', 'CVU', 'ETNB', 'ELA', 'EPAC', 'AVTE', 'CLNN', 'ZDPY', 'GLXZ', 'DALN', 'PD', 'MVO', 'BNZI', 'ECTM', 'SBSAA', 'BRT', 'WS', 'SNNF', 'STRO', 'EFOI', 'NGS', 'LTRY', 'DRI', 'AIR', 'AKBA', 'HGTXU', 'LPTX', 'NRIX', 'PXS', 'RELL', 'SANA', 'RFL', 'GHG', 'POAI', 'XFOR', 'LADX', 'CPHC', 'ARTW', 'CION', 'BIOF', 'HLGN', 'VIOT', 'PW', 'BKSC', 'ATNM', 'APTO', 'WELNF', 'PIII', 'DADA', 'OUST', 'YJ', 'PKTX', 'BRRE', 'PCYO', 'NTBLQ', 'SVRA', 'SJT', 'ALVO', 'VTSI', 'LICY', 'RFIL', 'SLNO', 'TFFP', 'BSET', 'ENZ', 'FLDD', 'BLPG', 'VYND', 'APYX', 'ETON', 'RWAY', 'SCS', 'HYPR', 'PALI', 'GES', 'LFT', 'MGX', 'NEUE', 'IVVD', 'KANP', 'NUVR', 'AQMS', 'ATXI', 'SCHL', 'MVXM', 'DYAI', 'AISP', 'LRFC', 'DTIL', 'TNGX', 'CDZI', 'MIY', 'DGLY', 'AXR', 'LXEO', 'JEF', 'SYPR', 'AIFU', 'EACO', 'BRFH', 'ALLO', 'BCDA', 'GAMB', 'CWCO', 'OSS', 'WGO', 'AADI', 'SER', 'SLS', 'PRT', 'VANI', 'BYRN', 'APCX', 'EUSP', 'SCND', 'LOAR', 'AUMN', 'PGNT', 'SVVC', 'LMFA', 'IBRX', 'INVU', 'SYTA', 'EEX', 'GMBL', 'OMIC', 'CPSH', 'BTTR', 'LVTX', 'SBFM', 'HGAS', 'BRZE', 'IDAI', 'HPS', 'AXDX', 'QLGN', 'FBRX', 'ZIVO', 'ELLO', 'GYRO', 'MINM', 'CRBU', 'DUOT', 'CBDY', 'LAKE', 'SOC', 'ORGN', 'HOWL', 'HSDT', 'TBCH', 'MFON', 'CLRB', 'CVR', 'QTI', 'ANVS', 'SNFCA', 'DOYU', 'COYA', 'RNGE', 'CRKN', 'ACTG', 'ALTI', 'GETY', 'SVT', 'MSGM', 'PSIX', 'SKYH', 'KMX', 'NNDM', 'ANGO', 'RDGL', 'IFRX', 'XELA', 'ACXP', 'MS', 'NDRA', 'XXII', 'CVSI', 'ALTS', 'HUSA', 'AZREF', 'MIGI', 'FRMO', 'ASMB', 'RANI', 'DSAQ', 'ACHL', 'ALZN', 'QPRC', 'SDOT', 'ENVB', 'STLY', 'KYTX', 'ASPS', 'HQI', 'GOSS', 'NMRD', 'SNAX', 'ZGN', 'TRVN', 'IDXG', 'HITC', 'PLSE', 'ITP', 'PRKR', 'EP', 'GHIX', 'KOPN', 'TGLO', 'GGROU', 'BAER', 'CNTX', 'BMTX', 'EVAX', 'USIO', 'LINK', 'TOI', 'LUNR', 'KRBP', 'ENTX', 'JYNT', 'LX', 'OCS', 'GLBS', 'DERM', 'PDSB', 'NBIO', 'BOLT', 'VINC', 'ZURA', 'FTLF', 'ENRT', 'SLRX', 'MNR', 'NCNO', 'AGX', 'DLPN', 'ABL', 'THRD', 'SILO', 'GMER', 'OGEN', 'XBIO', 'PULM', 'DRCT', 'MU', 'OAK PR A', 'ZEOX', 'VAXX', 'VVOS', 'NSTM', 'NAAS', 'PXHI', 'WMK', 'IZEA', 'HCMC', 'PNBK', 'AMPS', 'OCAX', 'BTM', 'IGMS', 'BRVO', 'GRWG', 'MBOT', 'DM', 'TOMZ', 'CRMZ', 'MHTX', 'ENFN', 'PMN', 'ACN', 'CNFN', 'PMVCD', 'IOBT', 'HLVX', 'REE', 'ATHA', 'PRTS', 'EMMA', 'FAVO', 'FGF', 'EAST', 'ENTO', 'QSEP', 'AWH', 'AREC', 'AVGR', 'MHGU', 'TAIT', 'IHS', 'CAG', 'CSIQ', 'TOON', 'ABSI', 'BFK', 'DIMC', 'SNX', 'CLOQ', 'LEN', 'HCWB', 'SNGX', 'BRNS', 'UNTY', 'OKLO', 'IPSI', 'OMQS', 'TLSI', 'MEDVF', 'LEXX', 'CRMD', 'RLBD', 'VERO', 'TCRT', 'OXBR', 'GSTX', 'MMATQ', 'TAYD', 'KANT', 'MSPR', 'FINR', 'KORE', 'TOPS', 'BIOLQ', 'PBLA', 'PALT', 'ENGN', 'AIM', 'ALRN', 'RBRK', 'KBH', 'MAPS', 'CLGN', 'RSLS', 'FBMS', 'CCG', 'ATYR', 'FC', 'CAPR', 'AREN', 'PYXS', 'XOS', 'VOC', 'LWAY', 'HIFS', 'PLAG', 'SLP', 'MDIA', 'TPHS', 'LFCR', 'RLX', 'LDSN', 'CMC', 'ARMP', 'AQB', 'LOT', 'PSQH', 'MOBQ', 'RSRV', 'USEG', 'IMAB', 'AAUAF', 'CATO', 'PAYD', 'GLUE', 'TOFB', 'SABS', 'EYEN', 'KEWL', 'TSSI', 'MCVT', 'PRGS', 'MOTS', 'VNET', 'ARAT', 'CPTN', 'FECOF', 'PRSO', 'TXT', 'PROK', 'SCYX', 'BLDE', 'SWKH', 'CSTAF', 'ANNX', 'CLVR', 'LENZ', 'INDP', 'GANX', 'ASRE', 'ABCP', 'NAOV', 'AVD', 'CALM', 'PRPO', 'QURT', 'USAP', 'GORV', 'AERG', 'NG', 'LGMK', 'FSEN', 'EQ', 'AKRO', 'KTEL', 'BCHT', 'NKTX', 'VRNT', 'ERAS', 'NUMD', 'MRKR', 'CREX', 'LCUT', 'ATER', 'SSII', 'BRST', 'PED', 'NSYS', 'PRPH', 'REED', 'BOC', 'ADAG', 'SNDL', 'SGMT', 'RELI', 'RUM', 'LIXT', 'CHCI', 'NRSN', 'CDIO', 'ARL', 'MOV', 'TTNP', 'CANN', 'MOJO', 'CRGX', 'CRT', 'JPM', 'TRVI', 'AXIL', 'SNDA', 'CRVW', 'CYCC', 'BBLR', 'AEVA', 'LSMG', 'AIO', 'GROY', 'TRML', 'AACG', 'NA', 'CKX', 'GBCS', 'LUCD', 'CBUS', 'IQST', 'PHIO', 'DROR', 'CTAS', 'EVOK', 'RBTK', 'KEN', 'AAMCF', 'UNTN', 'SCPH', 'BTTC', 'SFRX', 'INZY', 'VASO', 'TNLX', 'RHE', 'BTBT', 'EVCM', 'NANX', 'COCH', 'YY', 'MRVI', 'KNOP', 'VLDX', 'SACH', 'CRVO', 'SRGZ', 'TMLL', 'ASLN', 'NRXP', 'NCMI', 'IWSH', 'WALD', 'STRS', 'CNRD', 'XPEV', 'EDBL', 'LTUM', 'ENSV', 'PTIX', 'SPRY', 'FAST', 'GOGO', 'BLGO', 'ADCT', 'WFC', 'ALUR', 'KPRX', 'ELTX', 'AEHR', 'EFTR', 'PIAC', 'SGMO', 'KBLB', 'PPSI', 'TMXN', 'BZFD', 'VIGL', 'CLRO', 'HROW', 'NCPL', 'DTGI', 'EVFM', 'RKDA', 'RPMT', 'ALOT', 'BUKS', 'FSEA', 'JAGX', 'TWFG', 'PAYS', 'NVVE', 'CEOS', 'CLDI', 'CABA', 'SHIM', 'TLF', 'XESP', 'HLYK', 'LNN', 'EH', 'CLSH', 'GBX', 'SERA', 'CWD', 'HRGN', 'ASNS', 'LVLU', 'TIGR', 'NXGL', 'VDRM', 'NXPL', 'CMTL', 'GHAV', 'RGLS', 'WNDW', 'VERB', 'FEIM', 'MUC', 'CCL', 'APLT', 'DMAC', 'IE', 'BKUH', 'LW', 'QMCI', 'GIS', 'CMCM', 'CIPI', 'SGRP', 'IKT', 'TME', 'KRUS', 'HFFG', 'FDX', 'XBIT', 'AFIB', 'IMTX', 'GETR', 'SMTI', 'VISL', 'NKE', 'BKFG', 'TNXP', 'JBL', 'RLYB', 'ATAI', 'GTHP', 'MPTI', 'TGEN', 'TITN', 'BSEM', 'LGL', 'AMPG', 'AP', 'SHOT', 'PAYX', 'SRAD', 'BSFC', 'VS', 'MHLD', 'MTNB', 'AFMD', 'GLMD', 'CMPX', 'TPST', 'BHVN', 'SNWV', 'ARTH', 'CAPC', 'PMDI', 'TRX', 'TETAA', 'ACMTA', 'SONM', 'ENSC', 'EGY', 'CATV', 'XPL', 'PVL', 'ELLH', 'IMNM', 'DNTH', 'INKT', 'FRTX', 'ELVN', 'CLOE', 'GIGM', 'AIFS', 'SSKN', 'IDEXQ', 'RGP', 'TCI', 'MURA', 'BTT', 'SPRO', 'WVVI', 'CGRA', 'LOCL', 'MTR', 'MLSS', 'TOVX', 'WYY', 'LQMT', 'LUXH', 'AGAE', 'TBTC', 'FF', 'MCRAA', 'FGI', 'HUYA', 'CULL', 'REVB', 'USAU', 'INTS', 'CKPT', 'LVVV', 'HUDI', 'PCSA', 'NEON', 'BKYI', 'KOD', 'BOSC', 'OBIO', 'HNRG', 'INSE', 'SMID', 'NYC', 'ENGC', 'HOOK', 'SHWZ', 'PL', 'VNJA', 'PLBY', 'FLUX', 'SOAR', 'OPOF', 'AIRI', 'MDWD', 'CHKR', 'AVBP', 'PSMT', 'AFB', 'PGOL', 'SYBX', 'STT', 'RPM', 'COSM', 'EMYB', 'GNPX', 'OABI', 'BUDZ', 'AVTX', 'NEWH', 'HEWA', 'HSON', 'IOR', 'UPHL', 'TERN', 'GFR', 'AMS', 'KULR', 'NIU', 'TLRY', 'COCP', 'HMMR', 'NEN', 'FBIO', 'VTAK', 'FBSI', 'RNXT', 'NEOG', 'ISDR', 'WOW', 'YRD', 'LITB', 'IHT', 'PHVS', 'RAFI', 'NGTF', 'GRTX', 'EPSN', 'GAN', 'RVPH', 'CLSD', 'IPA', 'ABOS', 'FOTB', 'VOR', 'RVP', 'ATOS', 'CODX', 'KLDI', 'IMMX', 'FLNT', 'RSCF'], 'quotes': ['GRI', 'CBAT', 'BCLI', 'APOG', 'ACIU', 'DTI', 'SOHO', 'LIEN', 'QBAK', 'KLXE', 'FORA', 'UNCY', 'ADVM', 'WATT', 'RGNX', 'GCTS', 'EICCF', 'BK', 'HGBL', 'POLA', 'CFNB', 'DAL', 'ITOS', 'MNPR', 'BFNH', 'HOFV', 'KAVL', 'AKTX', 'ACRV', 'INIS', 'PTMN', 'RCAT', 'PANL', 'IVDA', 'LPRO', 'MSM', 'ENZN', 'TH', 'SOWG', 'ANTX', 'HHS', 'STTK', 'CALC', 'SMTC', 'SOBR', 'NGNE', 'BODI', 'CNXC', 'HBSI', 'VTDRF', 'ZVSA', 'CELZ', 'AMPE', 'AHNR', 'CYTOF', 'CLIR', 'YTENQ', 'SALM', 'EQS', 'CCLD', 'MTEX', 'MIST', 'PLX', 'ARTL', 'DNMR', 'MLKN', 'NIO', 'PHUN', 'FCUV', 'CTM', 'CEAD', 'AMPX', 'NOAH', 'MVST', 'JVA', 'MCRB', 'NMEX', 'PVLA', 'LIFD', 'NIMU', 'FUL', 'UG', 'IPDN', 'RBCN', 'YTFD', 'CELC', 'OCX', 'APYP', 'BFRI', 'IDN', 'HUMA', 'PBSV', 'HTCR', 'SHCO', 'UGRO', 'POET', 'HQY', 'RSKIA', 'HSCS', 'COE', 'DARE', 'FFLO', 'ELSE', 'MKC', 'BYSD', 'FEMY', 'HPI', 'NCNA', 'TELA', 'WBA', 'VERI', 'BBNX', 'CAAS', 'BTCS', 'LQDA', 'MVIS', 'VTYX', 'APRE', 'PCLB', 'ABEO', 'OPAL', 'BCOW', 'CGTX', 'CEIN', 'MTEM', 'UAMY', 'HOUR', 'NBY', 'UNF', 'SURG', 'PMCB', 'PFHO', 'DDDX', 'CMRF', 'KALA', 'MQT', 'UAVS', 'ASFT', 'PDD', 'QUBT', 'XPOF', 'CTSO', 'TATT', 'SHMN', 'KODK', 'LOGN', 'FALC', 'STCB', 'AVAH', 'AREB', 'CNBB', 'SMPL', 'LU', 'MTVA', 'CAAP', 'ACLX', 'FSI', 'ALVR', 'TBIO', 'AUID', 'RDI', 'RYES', 'CNNC', 'REKR', 'VUZI', 'APLD', 'BEAT', 'PRPL', 'WISA', 'JKS', 'OKUR', 'VCNX', 'BYOC', 'CGNT', 'SAIC', 'VIRC', 'CVV', 'GLYC', 'TISI', 'TNYA', 'VIRX', 'NUTX', 'PRST', 'LEAT', 'CODA', 'SFES', 'STRR', 'XLO', 'RMTI', 'MJNA', 'GNLX', 'SLRN', 'TIL', 'SIG', 'UEEC', 'BLBX', 'PHGE', 'BRGX', 'VSEE', 'TTAN', 'FET', 'TYRA', 'VEEE', 'AAME', 'GRDN', 'IDR', 'STNE', 'BEEM', 'GIFT', 'GEDC', 'INLX', 'CHMX', 'PENG', 'LFLY', 'SLGL', 'DOCU', 'CYTH', 'JQC', 'ICAD', 'CBNT', 'LNZA', 'QBTS', 'DQWS', 'GPFT', 'PVCT', 'TMRC', 'PESI', 'PGID', 'UEC', 'AYRO', 'ZNOG', 'NNUP', 'AYI', 'TYCB', 'KLNG', 'WOR', 'BLNK', 'BCAB', 'ATNF', 'UNTC', 'BATL', 'GOEV', 'GALT', 'STCN', 'AFYA', 'CNTY', 'AGRO', 'DHCC', 'IRON', 'SELF', 'RJDG', 'AGSS', 'IVCBF', 'KVAC', 'NTIC', 'CAWW', 'ATPC', 'BRTX', 'VFF', 'ECBK', 'TLCC', 'MDAI', 'CURR', 'ZEPP', 'HOTH', 'NTIP', 'BMRA', 'BSVN', 'TMC', 'KINS', 'CLPR', 'FGEN', 'KC', 'BIORQ', 'FDS', 'AIRS', 'ANRO', 'TSQ', 'CRTG', 'MGNX', 'DTST', 'ZOM', 'SDST', 'MBRX', 'TSVT', 'RDUS', 'CWGL', 'SKYE', 'INAB', 'EXSR', 'STZ', 'QXO', 'FUFU', 'LEVI', 'MUEL', 'IPSC', 'PIKM', 'TENX', 'EESE', 'CYBL', 'PAVM', 'JFIN', 'YI', 'DLTI', 'TG', 'ADIL', 'SHIP', 'GIII', 'EVTV', 'KRON', 'VKSC', 'GYRE', 'PORT', 'CHSCP', 'OVID', 'LVDW', 'OTLC', 'BABB', 'NRXS', 'GULTU', 'PLSH', 'BICX', 'LOVE', 'TACT', 'CARM', 'IDWM', 'UTGN', 'CONNQ', 'AFCG', 'MYD', 'BLUE', 'WDFC', 'ONFO', 'LCTC', 'QTRX', 'HYZN', 'SOND', 'BZUN', 'TRAW', 'CMCT', 'FULO', 'RLBY', 'DOMH', 'CMCL', 'CADL', 'PROP', 'TSBX', 'TSAT', 'BIAF', 'SNAL', 'GRYP', 'BMTM', 'NOTE', 'WHLM', 'DSS', 'INTI', 'AMEN', 'ELDN', 'RIBT', 'MRC', 'CNSP', 'TREP', 'FLXT', 'GBR', 'FVR', 'CNXX', 'KLC', 'MYNZ', 'YQ', 'RLMD', 'KRRO', 'HOFT', 'IKNA', 'OBLG', 'CVU', 'ETNB', 'ELA', 'EPAC', 'AVTE', 'CLNN', 'ZDPY', 'GLXZ', 'DALN', 'PD', 'MVO', 'BNZI', 'ECTM', 'SBSAA', 'BRT', 'WS', 'SNNF', 'STRO', 'EFOI', 'NGS', 'LTRY', 'DRI', 'AIR', 'AKBA', 'HGTXU', 'LPTX', 'NRIX', 'PXS', 'RELL', 'SANA', 'RFL', 'GHG', 'POAI', 'XFOR', 'LADX', 'CPHC', 'ARTW', 'CION', 'BIOF', 'HLGN', 'VIOT', 'PW', 'BKSC', 'ATNM', 'APTO', 'WELNF', 'PIII', 'DADA', 'OUST', 'YJ', 'PKTX', 'BRRE', 'PCYO', 'NTBLQ', 'SVRA', 'SJT', 'ALVO', 'VTSI', 'LICY', 'RFIL', 'SLNO', 'TFFP', 'BSET', 'ENZ', 'FLDD', 'BLPG', 'VYND', 'APYX', 'ETON', 'RWAY', 'SCS', 'HYPR', 'PALI', 'GES', 'LFT', 'MGX', 'NEUE', 'IVVD', 'KANP', 'NUVR', 'AQMS', 'ATXI', 'SCHL', 'MVXM', 'DYAI', 'AISP', 'LRFC', 'DTIL', 'TNGX', 'CDZI', 'MIY', 'DGLY', 'AXR', 'LXEO', 'JEF', 'SYPR', 'AIFU', 'EACO', 'BRFH', 'ALLO', 'BCDA', 'GAMB', 'CWCO', 'OSS', 'WGO', 'AADI', 'SER', 'SLS', 'PRT', 'VANI', 'BYRN', 'APCX', 'EUSP', 'SCND', 'LOAR', 'AUMN', 'PGNT', 'SVVC', 'LMFA', 'IBRX', 'INVU', 'SYTA', 'EEX', 'GMBL', 'OMIC', 'CPSH', 'BTTR', 'LVTX', 'SBFM', 'HGAS', 'BRZE', 'IDAI', 'HPS', 'AXDX', 'QLGN', 'FBRX', 'ZIVO', 'ELLO', 'GYRO', 'MINM', 'CRBU', 'DUOT', 'CBDY', 'LAKE', 'SOC', 'ORGN', 'HOWL', 'HSDT', 'TBCH', 'MFON', 'CLRB', 'CVR', 'QTI', 'ANVS', 'SNFCA', 'DOYU', 'COYA', 'RNGE', 'CRKN', 'ACTG', 'ALTI', 'GETY', 'SVT', 'MSGM', 'PSIX', 'SKYH', 'KMX', 'NNDM', 'ANGO', 'RDGL', 'IFRX', 'XELA', 'ACXP', 'MS', 'NDRA', 'XXII', 'CVSI', 'ALTS', 'HUSA', 'AZREF', 'MIGI', 'FRMO', 'ASMB', 'RANI', 'DSAQ', 'ACHL', 'ALZN', 'QPRC', 'SDOT', 'ENVB', 'STLY', 'KYTX', 'ASPS', 'HQI', 'GOSS', 'NMRD', 'SNAX', 'ZGN', 'TRVN', 'IDXG', 'HITC', 'PLSE', 'ITP', 'PRKR', 'EP', 'GHIX', 'KOPN', 'TGLO', 'GGROU', 'BAER', 'CNTX', 'BMTX', 'EVAX', 'USIO', 'LINK', 'TOI', 'LUNR', 'KRBP', 'ENTX', 'JYNT', 'LX', 'OCS', 'GLBS', 'DERM', 'PDSB', 'NBIO', 'BOLT', 'VINC', 'ZURA', 'FTLF', 'ENRT', 'SLRX', 'MNR', 'NCNO', 'AGX', 'DLPN', 'ABL', 'THRD', 'SILO', 'GMER', 'OGEN', 'XBIO', 'PULM', 'DRCT', 'MU', 'OAK PR A', 'ZEOX', 'VAXX', 'VVOS', 'NSTM', 'NAAS', 'PXHI', 'WMK', 'IZEA', 'HCMC', 'PNBK', 'AMPS', 'OCAX', 'BTM', 'IGMS', 'BRVO', 'GRWG', 'MBOT', 'DM', 'TOMZ', 'CRMZ', 'MHTX', 'ENFN', 'PMN', 'ACN', 'CNFN', 'PMVCD', 'IOBT', 'HLVX', 'REE', 'ATHA', 'PRTS', 'EMMA', 'FAVO', 'FGF', 'EAST', 'ENTO', 'QSEP', 'AWH', 'AREC', 'AVGR', 'MHGU', 'TAIT', 'IHS', 'CAG', 'CSIQ', 'TOON', 'ABSI', 'BFK', 'DIMC', 'SNX', 'CLOQ', 'LEN', 'HCWB', 'SNGX', 'BRNS', 'UNTY', 'OKLO', 'IPSI', 'OMQS', 'TLSI', 'MEDVF', 'LEXX', 'CRMD', 'RLBD', 'VERO', 'TCRT', 'OXBR', 'GSTX', 'MMATQ', 'TAYD', 'KANT', 'MSPR', 'FINR', 'KORE', 'TOPS', 'BIOLQ', 'PBLA', 'PALT', 'ENGN', 'AIM', 'ALRN', 'RBRK', 'KBH', 'MAPS', 'CLGN', 'RSLS', 'FBMS', 'CCG', 'ATYR', 'FC', 'CAPR', 'AREN', 'PYXS', 'XOS', 'VOC', 'LWAY', 'HIFS', 'PLAG', 'SLP', 'MDIA', 'TPHS', 'LFCR', 'RLX', 'LDSN', 'CMC', 'ARMP', 'AQB', 'LOT', 'PSQH', 'MOBQ', 'RSRV', 'USEG', 'IMAB', 'AAUAF', 'CATO', 'PAYD', 'GLUE', 'TOFB', 'SABS', 'EYEN', 'KEWL', 'TSSI', 'MCVT', 'PRGS', 'MOTS', 'VNET', 'ARAT', 'CPTN', 'FECOF', 'PRSO', 'TXT', 'PROK', 'SCYX', 'BLDE', 'SWKH', 'CSTAF', 'ANNX', 'CLVR', 'LENZ', 'INDP', 'GANX', 'ASRE', 'ABCP', 'NAOV', 'AVD', 'CALM', 'PRPO', 'QURT', 'USAP', 'GORV', 'AERG', 'NG', 'LGMK', 'FSEN', 'EQ', 'AKRO', 'KTEL', 'BCHT', 'NKTX', 'VRNT', 'ERAS', 'NUMD', 'MRKR', 'CREX', 'LCUT', 'ATER', 'SSII', 'BRST', 'PED', 'NSYS', 'PRPH', 'REED', 'BOC', 'ADAG', 'SNDL', 'SGMT', 'RELI', 'RUM', 'LIXT', 'CHCI', 'NRSN', 'CDIO', 'ARL', 'MOV', 'TTNP', 'CANN', 'MOJO', 'CRGX', 'CRT', 'JPM', 'TRVI', 'AXIL', 'SNDA', 'CRVW', 'CYCC', 'BBLR', 'AEVA', 'LSMG', 'AIO', 'GROY', 'TRML', 'AACG', 'NA', 'CKX', 'GBCS', 'LUCD', 'CBUS', 'IQST', 'PHIO', 'DROR', 'CTAS', 'EVOK', 'RBTK', 'KEN', 'AAMCF', 'UNTN', 'SCPH', 'BTTC', 'SFRX', 'INZY', 'VASO', 'TNLX', 'RHE', 'BTBT', 'EVCM', 'NANX', 'COCH', 'YY', 'MRVI', 'KNOP', 'VLDX', 'SACH', 'CRVO', 'SRGZ', 'TMLL', 'ASLN', 'NRXP', 'NCMI', 'IWSH', 'WALD', 'STRS', 'CNRD', 'XPEV', 'EDBL', 'LTUM', 'ENSV', 'PTIX', 'SPRY', 'FAST', 'GOGO', 'BLGO', 'ADCT', 'WFC', 'ALUR', 'KPRX', 'ELTX', 'AEHR', 'EFTR', 'PIAC', 'SGMO', 'KBLB', 'PPSI', 'TMXN', 'BZFD', 'VIGL', 'CLRO', 'HROW', 'NCPL', 'DTGI', 'EVFM', 'RKDA', 'RPMT', 'ALOT', 'BUKS', 'FSEA', 'JAGX', 'TWFG', 'PAYS', 'NVVE', 'CEOS', 'CLDI', 'CABA', 'SHIM', 'TLF', 'XESP', 'HLYK', 'LNN', 'EH', 'CLSH', 'GBX', 'SERA', 'CWD', 'HRGN', 'ASNS', 'LVLU', 'TIGR', 'NXGL', 'VDRM', 'NXPL', 'CMTL', 'GHAV', 'RGLS', 'WNDW', 'VERB', 'FEIM', 'MUC', 'CCL', 'APLT', 'DMAC', 'IE', 'BKUH', 'LW', 'QMCI', 'GIS', 'CMCM', 'CIPI', 'SGRP', 'IKT', 'TME', 'KRUS', 'HFFG', 'FDX', 'XBIT', 'AFIB', 'IMTX', 'GETR', 'SMTI', 'VISL', 'NKE', 'BKFG', 'TNXP', 'JBL', 'RLYB', 'ATAI', 'GTHP', 'MPTI', 'TGEN', 'TITN', 'BSEM', 'LGL', 'AMPG', 'AP', 'SHOT', 'PAYX', 'SRAD', 'BSFC', 'VS', 'MHLD', 'MTNB', 'AFMD', 'GLMD', 'CMPX', 'TPST', 'BHVN', 'SNWV', 'ARTH', 'CAPC', 'PMDI', 'TRX', 'TETAA', 'ACMTA', 'SONM', 'ENSC', 'EGY', 'CATV', 'XPL', 'PVL', 'ELLH', 'IMNM', 'DNTH', 'INKT', 'FRTX', 'ELVN', 'CLOE', 'GIGM', 'AIFS', 'SSKN', 'IDEXQ', 'RGP', 'TCI', 'MURA', 'BTT', 'SPRO', 'WVVI', 'CGRA', 'LOCL', 'MTR', 'MLSS', 'TOVX', 'WYY', 'LQMT', 'LUXH', 'AGAE', 'TBTC', 'FF', 'MCRAA', 'FGI', 'HUYA', 'CULL', 'REVB', 'USAU', 'INTS', 'CKPT', 'LVVV', 'HUDI', 'PCSA', 'NEON', 'BKYI', 'KOD', 'BOSC', 'OBIO', 'HNRG', 'INSE', 'SMID', 'NYC', 'ENGC', 'HOOK', 'SHWZ', 'PL', 'VNJA', 'PLBY', 'FLUX', 'SOAR', 'OPOF', 'AIRI', 'MDWD', 'CHKR', 'AVBP', 'PSMT', 'AFB', 'PGOL', 'SYBX', 'STT', 'RPM', 'COSM', 'EMYB', 'GNPX', 'OABI', 'BUDZ', 'AVTX', 'NEWH', 'HEWA', 'HSON', 'IOR', 'UPHL', 'TERN', 'GFR', 'AMS', 'KULR', 'NIU', 'TLRY', 'COCP', 'HMMR', 'NEN', 'FBIO', 'VTAK', 'FBSI', 'RNXT', 'NEOG', 'ISDR', 'WOW', 'YRD', 'LITB', 'IHT', 'PHVS', 'RAFI', 'NGTF', 'GRTX', 'EPSN', 'GAN', 'RVPH', 'CLSD', 'IPA', 'ABOS', 'FOTB', 'VOR', 'RVP', 'ATOS', 'CODX', 'KLDI', 'IMMX', 'FLNT', 'RSCF'], 'bars': ['GRI', 'CBAT', 'BCLI', 'APOG', 'ACIU', 'DTI', 'SOHO', 'LIEN', 'QBAK', 'KLXE', 'FORA', 'UNCY', 'ADVM', 'WATT', 'RGNX', 'GCTS', 'EICCF', 'BK', 'HGBL', 'POLA', 'CFNB', 'DAL', 'ITOS', 'MNPR', 'BFNH', 'HOFV', 'KAVL', 'AKTX', 'ACRV', 'INIS', 'PTMN', 'RCAT', 'PANL', 'IVDA', 'LPRO', 'MSM', 'ENZN', 'TH', 'SOWG', 'ANTX', 'HHS', 'STTK', 'CALC', 'SMTC', 'SOBR', 'NGNE', 'BODI', 'CNXC', 'HBSI', 'VTDRF', 'ZVSA', 'CELZ', 'AMPE', 'AHNR', 'CYTOF', 'CLIR', 'YTENQ', 'SALM', 'EQS', 'CCLD', 'MTEX', 'MIST', 'PLX', 'ARTL', 'DNMR', 'MLKN', 'NIO', 'PHUN', 'FCUV', 'CTM', 'CEAD', 'AMPX', 'NOAH', 'MVST', 'JVA', 'MCRB', 'NMEX', 'PVLA', 'LIFD', 'NIMU', 'FUL', 'UG', 'IPDN', 'RBCN', 'YTFD', 'CELC', 'OCX', 'APYP', 'BFRI', 'IDN', 'HUMA', 'PBSV', 'HTCR', 'SHCO', 'UGRO', 'POET', 'HQY', 'RSKIA', 'HSCS', 'COE', 'DARE', 'FFLO', 'ELSE', 'MKC', 'BYSD', 'FEMY', 'HPI', 'NCNA', 'TELA', 'WBA', 'VERI', 'BBNX', 'CAAS', 'BTCS', 'LQDA', 'MVIS', 'VTYX', 'APRE', 'PCLB', 'ABEO', 'OPAL', 'BCOW', 'CGTX', 'CEIN', 'MTEM', 'UAMY', 'HOUR', 'NBY', 'UNF', 'SURG', 'PMCB', 'PFHO', 'DDDX', 'CMRF', 'KALA', 'MQT', 'UAVS', 'ASFT', 'PDD', 'QUBT', 'XPOF', 'CTSO', 'TATT', 'SHMN', 'KODK', 'LOGN', 'FALC', 'STCB', 'AVAH', 'AREB', 'CNBB', 'SMPL', 'LU', 'MTVA', 'CAAP', 'ACLX', 'FSI', 'ALVR', 'TBIO', 'AUID', 'RDI', 'RYES', 'CNNC', 'REKR', 'VUZI', 'APLD', 'BEAT', 'PRPL', 'WISA', 'JKS', 'OKUR', 'VCNX', 'BYOC', 'CGNT', 'SAIC', 'VIRC', 'CVV', 'GLYC', 'TISI', 'TNYA', 'VIRX', 'NUTX', 'PRST', 'LEAT', 'CODA', 'SFES', 'STRR', 'XLO', 'RMTI', 'MJNA', 'GNLX', 'SLRN', 'TIL', 'SIG', 'UEEC', 'BLBX', 'PHGE', 'BRGX', 'VSEE', 'TTAN', 'FET', 'TYRA', 'VEEE', 'AAME', 'GRDN', 'IDR', 'STNE', 'BEEM', 'GIFT', 'GEDC', 'INLX', 'CHMX', 'PENG', 'LFLY', 'SLGL', 'DOCU', 'CYTH', 'JQC', 'ICAD', 'CBNT', 'LNZA', 'QBTS', 'DQWS', 'GPFT', 'PVCT', 'TMRC', 'PESI', 'PGID', 'UEC', 'AYRO', 'ZNOG', 'NNUP', 'AYI', 'TYCB', 'KLNG', 'WOR', 'BLNK', 'BCAB', 'ATNF', 'UNTC', 'BATL', 'GOEV', 'GALT', 'STCN', 'AFYA', 'CNTY', 'AGRO', 'DHCC', 'IRON', 'SELF', 'RJDG', 'AGSS', 'IVCBF', 'KVAC', 'NTIC', 'CAWW', 'ATPC', 'BRTX', 'VFF', 'ECBK', 'TLCC', 'MDAI', 'CURR', 'ZEPP', 'HOTH', 'NTIP', 'BMRA', 'BSVN', 'TMC', 'KINS', 'CLPR', 'FGEN', 'KC', 'BIORQ', 'FDS', 'AIRS', 'ANRO', 'TSQ', 'CRTG', 'MGNX', 'DTST', 'ZOM', 'SDST', 'MBRX', 'TSVT', 'RDUS', 'CWGL', 'SKYE', 'INAB', 'EXSR', 'STZ', 'QXO', 'FUFU', 'LEVI', 'MUEL', 'IPSC', 'PIKM', 'TENX', 'EESE', 'CYBL', 'PAVM', 'JFIN', 'YI', 'DLTI', 'TG', 'ADIL', 'SHIP', 'GIII', 'EVTV', 'KRON', 'VKSC', 'GYRE', 'PORT', 'CHSCP', 'OVID', 'LVDW', 'OTLC', 'BABB', 'NRXS', 'GULTU', 'PLSH', 'BICX', 'LOVE', 'TACT', 'CARM', 'IDWM', 'UTGN', 'CONNQ', 'AFCG', 'MYD', 'BLUE', 'WDFC', 'ONFO', 'LCTC', 'QTRX', 'HYZN', 'SOND', 'BZUN', 'TRAW', 'CMCT', 'FULO', 'RLBY', 'DOMH', 'CMCL', 'CADL', 'PROP', 'TSBX', 'TSAT', 'BIAF', 'SNAL', 'GRYP', 'BMTM', 'NOTE', 'WHLM', 'DSS', 'INTI', 'AMEN', 'ELDN', 'RIBT', 'MRC', 'CNSP', 'TREP', 'FLXT', 'GBR', 'FVR', 'CNXX', 'KLC', 'MYNZ', 'YQ', 'RLMD', 'KRRO', 'HOFT', 'IKNA', 'OBLG', 'CVU', 'ETNB', 'ELA', 'EPAC', 'AVTE', 'CLNN', 'ZDPY', 'GLXZ', 'DALN', 'PD', 'MVO', 'BNZI', 'ECTM', 'SBSAA', 'BRT', 'WS', 'SNNF', 'STRO', 'EFOI', 'NGS', 'LTRY', 'DRI', 'AIR', 'AKBA', 'HGTXU', 'LPTX', 'NRIX', 'PXS', 'RELL', 'SANA', 'RFL', 'GHG', 'POAI', 'XFOR', 'LADX', 'CPHC', 'ARTW', 'CION', 'BIOF', 'HLGN', 'VIOT', 'PW', 'BKSC', 'ATNM', 'APTO', 'WELNF', 'PIII', 'DADA', 'OUST', 'YJ', 'PKTX', 'BRRE', 'PCYO', 'NTBLQ', 'SVRA', 'SJT', 'ALVO', 'VTSI', 'LICY', 'RFIL', 'SLNO', 'TFFP', 'BSET', 'ENZ', 'FLDD', 'BLPG', 'VYND', 'APYX', 'ETON', 'RWAY', 'SCS', 'HYPR', 'PALI', 'GES', 'LFT', 'MGX', 'NEUE', 'IVVD', 'KANP', 'NUVR', 'AQMS', 'ATXI', 'SCHL', 'MVXM', 'DYAI', 'AISP', 'LRFC', 'DTIL', 'TNGX', 'CDZI', 'MIY', 'DGLY', 'AXR', 'LXEO', 'JEF', 'SYPR', 'AIFU', 'EACO', 'BRFH', 'ALLO', 'BCDA', 'GAMB', 'CWCO', 'OSS', 'WGO', 'AADI', 'SER', 'SLS', 'PRT', 'VANI', 'BYRN', 'APCX', 'EUSP', 'SCND', 'LOAR', 'AUMN', 'PGNT', 'SVVC', 'LMFA', 'IBRX', 'INVU', 'SYTA', 'EEX', 'GMBL', 'OMIC', 'CPSH', 'BTTR', 'LVTX', 'SBFM', 'HGAS', 'BRZE', 'IDAI', 'HPS', 'AXDX', 'QLGN', 'FBRX', 'ZIVO', 'ELLO', 'GYRO', 'MINM', 'CRBU', 'DUOT', 'CBDY', 'LAKE', 'SOC', 'ORGN', 'HOWL', 'HSDT', 'TBCH', 'MFON', 'CLRB', 'CVR', 'QTI', 'ANVS', 'SNFCA', 'DOYU', 'COYA', 'RNGE', 'CRKN', 'ACTG', 'ALTI', 'GETY', 'SVT', 'MSGM', 'PSIX', 'SKYH', 'KMX', 'NNDM', 'ANGO', 'RDGL', 'IFRX', 'XELA', 'ACXP', 'MS', 'NDRA', 'XXII', 'CVSI', 'ALTS', 'HUSA', 'AZREF', 'MIGI', 'FRMO', 'ASMB', 'RANI', 'DSAQ', 'ACHL', 'ALZN', 'QPRC', 'SDOT', 'ENVB', 'STLY', 'KYTX', 'ASPS', 'HQI', 'GOSS', 'NMRD', 'SNAX', 'ZGN', 'TRVN', 'IDXG', 'HITC', 'PLSE', 'ITP', 'PRKR', 'EP', 'GHIX', 'KOPN', 'TGLO', 'GGROU', 'BAER', 'CNTX', 'BMTX', 'EVAX', 'USIO', 'LINK', 'TOI', 'LUNR', 'KRBP', 'ENTX', 'JYNT', 'LX', 'OCS', 'GLBS', 'DERM', 'PDSB', 'NBIO', 'BOLT', 'VINC', 'ZURA', 'FTLF', 'ENRT', 'SLRX', 'MNR', 'NCNO', 'AGX', 'DLPN', 'ABL', 'THRD', 'SILO', 'GMER', 'OGEN', 'XBIO', 'PULM', 'DRCT', 'MU', 'OAK PR A', 'ZEOX', 'VAXX', 'VVOS', 'NSTM', 'NAAS', 'PXHI', 'WMK', 'IZEA', 'HCMC', 'PNBK', 'AMPS', 'OCAX', 'BTM', 'IGMS', 'BRVO', 'GRWG', 'MBOT', 'DM', 'TOMZ', 'CRMZ', 'MHTX', 'ENFN', 'PMN', 'ACN', 'CNFN', 'PMVCD', 'IOBT', 'HLVX', 'REE', 'ATHA', 'PRTS', 'EMMA', 'FAVO', 'FGF', 'EAST', 'ENTO', 'QSEP', 'AWH', 'AREC', 'AVGR', 'MHGU', 'TAIT', 'IHS', 'CAG', 'CSIQ', 'TOON', 'ABSI', 'BFK', 'DIMC', 'SNX', 'CLOQ', 'LEN', 'HCWB', 'SNGX', 'BRNS', 'UNTY', 'OKLO', 'IPSI', 'OMQS', 'TLSI', 'MEDVF', 'LEXX', 'CRMD', 'RLBD', 'VERO', 'TCRT', 'OXBR', 'GSTX', 'MMATQ', 'TAYD', 'KANT', 'MSPR', 'FINR', 'KORE', 'TOPS', 'BIOLQ', 'PBLA', 'PALT', 'ENGN', 'AIM', 'ALRN', 'RBRK', 'KBH', 'MAPS', 'CLGN', 'RSLS', 'FBMS', 'CCG', 'ATYR', 'FC', 'CAPR', 'AREN', 'PYXS', 'XOS', 'VOC', 'LWAY', 'HIFS', 'PLAG', 'SLP', 'MDIA', 'TPHS', 'LFCR', 'RLX', 'LDSN', 'CMC', 'ARMP', 'AQB', 'LOT', 'PSQH', 'MOBQ', 'RSRV', 'USEG', 'IMAB', 'AAUAF', 'CATO', 'PAYD', 'GLUE', 'TOFB', 'SABS', 'EYEN', 'KEWL', 'TSSI', 'MCVT', 'PRGS', 'MOTS', 'VNET', 'ARAT', 'CPTN', 'FECOF', 'PRSO', 'TXT', 'PROK', 'SCYX', 'BLDE', 'SWKH', 'CSTAF', 'ANNX', 'CLVR', 'LENZ', 'INDP', 'GANX', 'ASRE', 'ABCP', 'NAOV', 'AVD', 'CALM', 'PRPO', 'QURT', 'USAP', 'GORV', 'AERG', 'NG', 'LGMK', 'FSEN', 'EQ', 'AKRO', 'KTEL', 'BCHT', 'NKTX', 'VRNT', 'ERAS', 'NUMD', 'MRKR', 'CREX', 'LCUT', 'ATER', 'SSII', 'BRST', 'PED', 'NSYS', 'PRPH', 'REED', 'BOC', 'ADAG', 'SNDL', 'SGMT', 'RELI', 'RUM', 'LIXT', 'CHCI', 'NRSN', 'CDIO', 'ARL', 'MOV', 'TTNP', 'CANN', 'MOJO', 'CRGX', 'CRT', 'JPM', 'TRVI', 'AXIL', 'SNDA', 'CRVW', 'CYCC', 'BBLR', 'AEVA', 'LSMG', 'AIO', 'GROY', 'TRML', 'AACG', 'NA', 'CKX', 'GBCS', 'LUCD', 'CBUS', 'IQST', 'PHIO', 'DROR', 'CTAS', 'EVOK', 'RBTK', 'KEN', 'AAMCF', 'UNTN', 'SCPH', 'BTTC', 'SFRX', 'INZY', 'VASO', 'TNLX', 'RHE', 'BTBT', 'EVCM', 'NANX', 'COCH', 'YY', 'MRVI', 'KNOP', 'VLDX', 'SACH', 'CRVO', 'SRGZ', 'TMLL', 'ASLN', 'NRXP', 'NCMI', 'IWSH', 'WALD', 'STRS', 'CNRD', 'XPEV', 'EDBL', 'LTUM', 'ENSV', 'PTIX', 'SPRY', 'FAST', 'GOGO', 'BLGO', 'ADCT', 'WFC', 'ALUR', 'KPRX', 'ELTX', 'AEHR', 'EFTR', 'PIAC', 'SGMO', 'KBLB', 'PPSI', 'TMXN', 'BZFD', 'VIGL', 'CLRO', 'HROW', 'NCPL', 'DTGI', 'EVFM', 'RKDA', 'RPMT', 'ALOT', 'BUKS', 'FSEA', 'JAGX', 'TWFG', 'PAYS', 'NVVE', 'CEOS', 'CLDI', 'CABA', 'SHIM', 'TLF', 'XESP', 'HLYK', 'LNN', 'EH', 'CLSH', 'GBX', 'SERA', 'CWD', 'HRGN', 'ASNS', 'LVLU', 'TIGR', 'NXGL', 'VDRM', 'NXPL', 'CMTL', 'GHAV', 'RGLS', 'WNDW', 'VERB', 'FEIM', 'MUC', 'CCL', 'APLT', 'DMAC', 'IE', 'BKUH', 'LW', 'QMCI', 'GIS', 'CMCM', 'CIPI', 'SGRP', 'IKT', 'TME', 'KRUS', 'HFFG', 'FDX', 'XBIT', 'AFIB', 'IMTX', 'GETR', 'SMTI', 'VISL', 'NKE', 'BKFG', 'TNXP', 'JBL', 'RLYB', 'ATAI', 'GTHP', 'MPTI', 'TGEN', 'TITN', 'BSEM', 'LGL', 'AMPG', 'AP', 'SHOT', 'PAYX', 'SRAD', 'BSFC', 'VS', 'MHLD', 'MTNB', 'AFMD', 'GLMD', 'CMPX', 'TPST', 'BHVN', 'SNWV', 'ARTH', 'CAPC', 'PMDI', 'TRX', 'TETAA', 'ACMTA', 'SONM', 'ENSC', 'EGY', 'CATV', 'XPL', 'PVL', 'ELLH', 'IMNM', 'DNTH', 'INKT', 'FRTX', 'ELVN', 'CLOE', 'GIGM', 'AIFS', 'SSKN', 'IDEXQ', 'RGP', 'TCI', 'MURA', 'BTT', 'SPRO', 'WVVI', 'CGRA', 'LOCL', 'MTR', 'MLSS', 'TOVX', 'WYY', 'LQMT', 'LUXH', 'AGAE', 'TBTC', 'FF', 'MCRAA', 'FGI', 'HUYA', 'CULL', 'REVB', 'USAU', 'INTS', 'CKPT', 'LVVV', 'HUDI', 'PCSA', 'NEON', 'BKYI', 'KOD', 'BOSC', 'OBIO', 'HNRG', 'INSE', 'SMID', 'NYC', 'ENGC', 'HOOK', 'SHWZ', 'PL', 'VNJA', 'PLBY', 'FLUX', 'SOAR', 'OPOF', 'AIRI', 'MDWD', 'CHKR', 'AVBP', 'PSMT', 'AFB', 'PGOL', 'SYBX', 'STT', 'RPM', 'COSM', 'EMYB', 'GNPX', 'OABI', 'BUDZ', 'AVTX', 'NEWH', 'HEWA', 'HSON', 'IOR', 'UPHL', 'TERN', 'GFR', 'AMS', 'KULR', 'NIU', 'TLRY', 'COCP', 'HMMR', 'NEN', 'FBIO', 'VTAK', 'FBSI', 'RNXT', 'NEOG', 'ISDR', 'WOW', 'YRD', 'LITB', 'IHT', 'PHVS', 'RAFI', 'NGTF', 'GRTX', 'EPSN', 'GAN', 'RVPH', 'CLSD', 'IPA', 'ABOS', 'FOTB', 'VOR', 'RVP', 'ATOS', 'CODX', 'KLDI', 'IMMX', 'FLNT', 'RSCF']}
+2025-03-13 14:47:47,076 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:47:47,080 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:47:47,080 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:47:47,088 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:47:47,189 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:47:48,441 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:47:48,441 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:47:48,441 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:47:48,441 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:47:48,441 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:47:48,442 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:47:48,442 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:47:48,442 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:47:48,442 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"74516b8cf63c05f0725f4bbf61c9d429","message":"Your plan does
+2025-03-13 14:47:48,442 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:47:48,442 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:47:48,445 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:47:48,445 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:47:48,449 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:48,450 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:48,450 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:48,450 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:48,450 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:48,450 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:47:48,451 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:47:48,545 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-13 14:48:10,960 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:48:10,964 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 14:48:10,965 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 14:48:10,978 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 14:48:11,080 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 14:48:12,443 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 14:48:12,443 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 14:48:12,443 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 14:48:12,443 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 14:48:12,443 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 14:48:12,443 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 14:48:12,443 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 14:48:12,443 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 14:48:12,443 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"093043d36b50ce9b171ee454b7180567","message":"Your plan does
+2025-03-13 14:48:12,444 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 14:48:12,444 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 14:48:12,447 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 14:48:12,448 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 14:48:12,451 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:48:12,452 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:48:12,452 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:48:12,452 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:48:12,452 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:48:12,452 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 14:48:12,452 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 14:48:12,553 - core.trading_system - INFO - Daily report generated and sent

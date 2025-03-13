@@ -240,12 +240,20 @@ class TradingSystem:
 
     def _setup_market_data_stream(self):
         """Set up real-time market data streaming with Alpaca"""
-        if self.market_data_stream:
+        if hasattr(self,
+                   'market_data_stream_manager') and self.market_data_stream_manager and self.market_data_stream_manager.is_running():
             logger.info("Market data stream already running")
             return
 
         try:
-            self.market_data_stream = StockDataStream(self.api_key, self.api_secret)
+            # Import the StreamManager here to avoid circular imports
+            from utils.market_data_stream import MarketDataStreamManager
+
+            # Initialize the stream manager
+            self.market_data_stream_manager = MarketDataStreamManager(
+                self.api_key,
+                self.api_secret,
+            )
 
             # Find symbols to track based on open positions and watchlist
             symbols_to_track = set()
@@ -270,65 +278,80 @@ class TradingSystem:
 
             logger.info(f"Setting up market data stream for {len(symbols_to_track)} symbols")
 
-            # Set up the connection and event handlers
-            async def start_streaming_inner():
-                # Subscribe to relevant data with class method coroutines
-                self.market_data_stream.subscribe_trades(self._handle_trade, *symbols_to_track)
-                self.market_data_stream.subscribe_quotes(self._handle_quote, *symbols_to_track)
-                self.market_data_stream.subscribe_bars(self._handle_bar, *symbols_to_track)
+            # Set up the handlers
+            self.market_data_stream_manager.setup(
+                trade_handler=self._handle_trade,
+                quote_handler=self._handle_quote,
+                bar_handler=self._handle_bar,
+                symbols=symbols_to_track
+            )
 
-                await self.market_data_stream.run()
-
-            # Run the streaming in a separate thread
-            def run_streaming():
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
-                loop.run_until_complete(start_streaming_inner())
-
-            # Start the streaming thread
-            self.stream_thread = threading.Thread(target=run_streaming, daemon=True)
-            self.stream_thread.start()
-
-            logger.info("Market data streaming started successfully")
+            # Start the stream
+            success = self.market_data_stream_manager.start()
+            if success:
+                logger.info("Market data streaming started successfully")
+            else:
+                logger.warning("Failed to start market data stream")
 
         except Exception as e:
             logger.error(f"Failed to set up market data stream: {e}")
-            self.market_data_stream = None
+            self.market_data_stream_manager = None
 
-    def _check_for_price_alerts(self, symbol: str, quote: Any):
+    def _cleanup_market_data_stream(self):
+        """Clean up market data stream resources"""
+        if hasattr(self, 'market_data_stream_manager') and self.market_data_stream_manager:
+            try:
+                self.market_data_stream_manager.stop()
+                logger.info("Market data stream stopped and cleaned up")
+            except Exception as e:
+                logger.error(f"Error cleaning up market data stream: {e}")
+            finally:
+                self.market_data_stream_manager = None
+
+    async def _check_for_price_alerts(self, symbol: str, quote: Any):
         """Check if a price update should trigger alerts for open positions"""
-        if not hasattr(quote, 'bid_price') or not hasattr(quote, 'ask_price'):
-            return
+        try:
+            # Extract current price based on how it's provided
+            if hasattr(quote, 'bid_price'):
+                current_price = float(quote.bid_price)  # Original Alpaca stream object
+            elif isinstance(quote, dict) and 'bp' in quote:
+                current_price = float(quote.get('bp', 0))  # Msgpack unpacked dict
+            else:
+                # Can't determine price
+                return
 
-        current_price = float(quote.bid_price)  # Use bid for conservative valuation
+            if current_price <= 0:
+                return
 
-        # Check all positions with this underlying
-        open_positions = self.db_manager.get_open_positions()
-        for position in open_positions:
-            if position.get('underlying') == symbol:
-                # Calculate unrealized P&L
-                entry_price = position.get('entry_price', 0)
-                contracts = position.get('quantity', 0)
+            # Check all positions with this underlying
+            open_positions = self.db_manager.get_open_positions()
+            for position in open_positions:
+                if position.get('underlying') == symbol:
+                    # Calculate unrealized P&L
+                    entry_price = position.get('entry_price', 0)
+                    contracts = position.get('quantity', 0)
 
-                if entry_price and contracts:
-                    entry_value = entry_price * contracts * 100
-                    # For options we'd need the actual option price, but this is a rough estimate
-                    current_value = entry_value * (1 + (current_price / position.get('strike', 100) - 1))
-                    pnl_pct = (current_value / entry_value - 1) * 100
+                    if entry_price and contracts:
+                        entry_value = entry_price * contracts * 100
+                        # For options we'd need the actual option price, but this is a rough estimate
+                        current_value = entry_value * (1 + (current_price / position.get('strike', 100) - 1))
+                        pnl_pct = (current_value / entry_value - 1) * 100
 
-                    # Check for significant price movements
-                    if pnl_pct > 20:  # Profitable position
-                        self.message_queue.put({
-                            'type': 'notification',
-                            'message': f"Position {position['symbol']} is up {pnl_pct:.1f}% - consider taking profit",
-                            'level': 'info'
-                        })
-                    elif pnl_pct < -15:  # Losing position
-                        self.message_queue.put({
-                            'type': 'notification',
-                            'message': f"Position {position['symbol']} is down {abs(pnl_pct):.1f}% - monitor closely",
-                            'level': 'warning'
-                        })
+                        # Check for significant price movements
+                        if pnl_pct > 20:  # Profitable position
+                            self.message_queue.put({
+                                'type': 'notification',
+                                'message': f"Position {position['symbol']} is up {pnl_pct:.1f}% - consider taking profit",
+                                'level': 'info'
+                            })
+                        elif pnl_pct < -15:  # Losing position
+                            self.message_queue.put({
+                                'type': 'notification',
+                                'message': f"Position {position['symbol']} is down {abs(pnl_pct):.1f}% - monitor closely",
+                                'level': 'warning'
+                            })
+        except Exception as e:
+            logger.error(f"Error checking price alerts: {e}")
 
     def is_market_open(self) -> bool:
         """Check if the market is currently open using Alpaca API"""
@@ -414,6 +437,9 @@ class TradingSystem:
         try:
             # Set trading state
             self.trading_active = False
+
+            # Clean up streaming connections
+            self._cleanup_market_data_stream()
 
             # Log and notify
             logger.info(f"Trading system deactivated: {reason}")
@@ -700,9 +726,14 @@ class TradingSystem:
                 })
 
             # Check market data stream
-            if self.trading_active and not self.market_data_stream:
-                logger.warning("Market data stream not running - attempting to restart")
-                self._setup_market_data_stream()
+            if self.trading_active:
+                stream_running = (hasattr(self, 'market_data_stream_manager') and
+                                  self.market_data_stream_manager and
+                                  self.market_data_stream_manager.is_running())
+
+                if not stream_running:
+                    logger.warning("Market data stream not running - attempting to restart")
+                    self._setup_market_data_stream()
 
         except Exception as e:
             logger.error(f"Error in system health check: {e}")
