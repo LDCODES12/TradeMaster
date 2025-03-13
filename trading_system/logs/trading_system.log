@@ -1269,3 +1269,753 @@ LINE 1: SELECT * FROM trades WHERE date(entry_time) = ? OR date(exit...
 2025-03-13 11:18:27,817 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
 2025-03-13 11:18:27,818 - core.trading_system - INFO - Trading system initialized and ready
 2025-03-13 11:18:27,993 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-13 11:28:08,919 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:28:08,941 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:28:08,941 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:28:08,959 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:28:09,447 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:28:12,029 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:28:12,029 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:28:12,029 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:28:12,029 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:28:12,029 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:28:12,029 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:28:12,029 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:28:12,029 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:28:12,030 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"59c7e1a1c0da03988d817f95d2acbc0b","message":"Your plan does
+2025-03-13 11:28:12,030 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:28:12,030 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:28:12,035 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:28:12,035 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:28:12,043 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:12,052 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:12,052 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:12,052 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:12,053 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:12,053 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:12,053 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:28:16,402 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:28:16,403 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:28:16,403 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:28:16,410 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:28:16,734 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:28:18,963 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:28:18,963 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:28:18,963 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:28:18,964 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:28:18,964 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:28:18,964 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:28:18,964 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:28:18,964 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:28:18,964 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"0a53b5ee5f47deb0bae072966fd5af42","message":"Your plan does
+2025-03-13 11:28:18,965 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:28:18,965 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:28:18,968 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:28:18,968 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:28:18,971 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:18,971 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:18,971 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:18,971 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:18,972 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:18,972 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:28:18,972 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:28:19,264 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 11:28:19,264 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 11:28:19,264 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 11:28:19,265 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 11:28:19,265 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 11:28:19,265 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 11:28:19,265 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 11:28:19,267 - core.trading_system - INFO - Setting up market data stream for 1097 symbols
+2025-03-13 11:28:19,267 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 11:28:19,267 - core.trading_system - INFO - Trading system activated
+2025-03-13 11:28:19,774 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 11:28:19,983 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 11:28:19,987 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:28:19,996 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 11:28:19,996 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 11:28:19,996 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 11:28:19,996 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 11:34:45,779 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:34:45,799 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:34:45,800 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:34:45,821 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:34:46,311 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:34:49,260 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:34:49,260 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:34:49,260 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:34:49,260 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:34:49,261 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:34:49,261 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:34:49,261 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:34:49,261 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:34:49,261 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"2109e057716080260700bf10c110e5d6","message":"Your plan does
+2025-03-13 11:34:49,261 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:34:49,262 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:34:49,267 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:34:49,267 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:34:49,274 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:49,284 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:49,284 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:49,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:49,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:49,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:49,285 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:34:54,306 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:34:54,308 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:34:54,308 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:34:54,327 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:34:54,652 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:34:56,635 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:34:56,635 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:34:56,635 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:34:56,635 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:34:56,635 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:34:56,635 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:34:56,636 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:34:56,636 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:34:56,636 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"72ba7ab5b4138fa35c896833363ca134","message":"Your plan does
+2025-03-13 11:34:56,636 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:34:56,636 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:34:56,640 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:34:56,640 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:34:56,643 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:56,643 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:56,643 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:56,644 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:56,644 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:56,644 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:34:56,644 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:34:56,913 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-13 11:35:09,375 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:35:09,376 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:35:09,377 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:35:09,385 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:35:09,485 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:35:11,502 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:35:11,502 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:35:11,503 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:35:11,503 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:35:11,503 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:35:11,503 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:35:11,503 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:35:11,503 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:35:11,503 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"e46d26d83ee269eada14341fc3434902","message":"Your plan does
+2025-03-13 11:35:11,503 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:35:11,503 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:35:11,506 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:35:11,507 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:35:11,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:35:11,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:35:11,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:35:11,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:35:11,511 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:35:11,512 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:35:11,512 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:35:11,620 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 11:35:11,620 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 11:35:11,620 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 11:35:11,621 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 11:35:11,621 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 11:35:11,621 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 11:35:11,621 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 11:35:11,623 - core.trading_system - INFO - Setting up market data stream for 1097 symbols
+2025-03-13 11:35:11,624 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 11:35:11,624 - core.trading_system - INFO - Trading system activated
+2025-03-13 11:35:11,790 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 11:35:11,857 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 11:35:11,861 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:35:11,870 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 11:35:11,870 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 11:35:11,870 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 11:35:11,870 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 11:48:24,715 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:48:24,737 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:48:24,737 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:48:24,760 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:48:25,173 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:48:26,862 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:48:26,863 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:48:26,863 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:48:26,863 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:48:26,863 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:48:26,863 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:48:26,863 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:48:26,863 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:48:26,864 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"bf026eebd488aaa41698d9b80c8ffe96","message":"Your plan does
+2025-03-13 11:48:26,864 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:48:26,864 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:48:26,868 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:48:26,868 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:48:26,876 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:26,887 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:26,887 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:26,887 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:26,887 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:26,887 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:26,887 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:48:29,130 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:48:29,131 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:48:29,131 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:48:29,137 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:48:29,296 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:48:30,943 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:48:30,944 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:48:30,944 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:48:30,944 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:48:30,944 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:48:30,944 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:48:30,944 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:48:30,944 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:48:30,944 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"345b6f7a636bb2d6792c8f3bfe6880b9","message":"Your plan does
+2025-03-13 11:48:30,944 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:48:30,944 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:48:30,948 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:48:30,948 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:48:30,954 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:30,954 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:30,954 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:30,955 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:30,955 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:30,955 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:30,955 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:48:31,251 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-13 11:48:38,697 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:48:38,698 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:48:38,699 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:48:38,705 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:48:39,027 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:48:40,820 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:48:40,820 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:48:40,821 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:48:40,821 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:48:40,821 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:48:40,821 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:48:40,821 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:48:40,821 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:48:40,821 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"34528e56cf1141cb571ffca4ad757515","message":"Your plan does
+2025-03-13 11:48:40,821 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:48:40,821 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:48:40,824 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:48:40,824 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:48:40,828 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:40,828 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:40,828 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:40,829 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:40,829 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:40,829 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:48:40,829 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:48:40,958 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 11:48:40,958 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 11:48:40,959 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 11:48:40,959 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 11:48:40,959 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 11:48:40,959 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 11:48:40,959 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 11:48:40,961 - core.trading_system - INFO - Setting up market data stream for 1097 symbols
+2025-03-13 11:48:40,961 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 11:48:40,961 - core.trading_system - INFO - Trading system activated
+2025-03-13 11:48:41,122 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 11:48:41,192 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 11:48:41,196 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:48:41,205 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 11:48:41,205 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 11:48:41,205 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 11:48:41,205 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 11:55:23,582 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:55:23,602 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:55:23,602 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:55:23,624 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:55:23,785 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:55:25,123 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:55:25,123 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:55:25,124 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:55:25,124 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:55:25,124 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:55:25,124 - core.options_strategy - INFO - ✅ ALPHAVANTAGE: success
+2025-03-13 11:55:25,124 - core.options_strategy - INFO -   Details: Connected to Alpha Vantage API
+2025-03-13 11:55:25,124 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:55:25,124 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"272879c6636e0cc3726b1d4ba508be1f","message":"Your plan does
+2025-03-13 11:55:25,125 - core.options_strategy - WARNING - Warning: The following APIs have issues: polygon
+2025-03-13 11:55:25,125 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:55:25,128 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:55:25,128 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:55:25,136 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:25,147 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:25,147 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:25,147 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:25,147 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:25,147 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:25,148 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:55:27,255 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:55:27,256 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:55:27,256 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:55:27,262 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:55:27,364 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:55:28,419 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:55:28,419 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:55:28,419 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:55:28,419 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:55:28,419 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:55:28,419 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 11:55:28,419 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 11:55:28,420 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:55:28,420 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"cb82b874c3d0e8ee95c19fc76002f2f2","message":"Your plan does
+2025-03-13 11:55:28,420 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 11:55:28,420 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:55:28,423 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:55:28,423 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:55:28,426 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:28,427 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:28,427 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:28,427 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:28,427 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:28,428 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:55:28,428 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:55:28,539 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 11:55:28,539 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 11:55:28,539 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 11:55:28,540 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 11:55:28,540 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 11:55:28,540 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 11:55:28,540 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 11:55:28,542 - core.trading_system - INFO - Setting up market data stream for 1097 symbols
+2025-03-13 11:55:28,542 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 11:55:28,542 - core.trading_system - INFO - Trading system activated
+2025-03-13 11:55:28,739 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 11:55:28,818 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 11:55:28,821 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:55:28,831 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 11:55:28,831 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 11:55:28,831 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 11:55:28,831 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 11:57:43,330 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:57:43,352 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:57:43,352 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:57:43,371 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:57:43,471 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:57:44,633 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:57:44,633 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:57:44,634 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:57:44,634 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:57:44,634 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:57:44,634 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 11:57:44,634 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 11:57:44,634 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:57:44,634 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"642f28e179b59d7b02552a10513b08d8","message":"Your plan does
+2025-03-13 11:57:44,635 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 11:57:44,635 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:57:44,639 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:57:44,640 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:57:44,647 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:44,658 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:44,658 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:44,659 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:44,659 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:44,659 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:44,659 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:57:48,061 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:57:48,062 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 11:57:48,062 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 11:57:48,068 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 11:57:48,230 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 11:57:49,743 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 11:57:49,743 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 11:57:49,743 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 11:57:49,743 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 11:57:49,743 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 11:57:49,743 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 11:57:49,744 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 11:57:49,744 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 11:57:49,744 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"e287991ebeb1cc9bcc181c20dfa79c4d","message":"Your plan does
+2025-03-13 11:57:49,744 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 11:57:49,744 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 11:57:49,747 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:57:49,747 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 11:57:49,752 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:49,753 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:49,753 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:49,753 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:49,753 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:49,753 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 11:57:49,754 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 11:57:49,852 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 11:57:49,853 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 11:57:49,853 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 11:57:49,853 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 11:57:49,853 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 11:57:49,853 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 11:57:49,854 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 11:57:49,855 - core.trading_system - INFO - Setting up market data stream for 1097 symbols
+2025-03-13 11:57:49,855 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 11:57:49,856 - core.trading_system - INFO - Trading system activated
+2025-03-13 11:57:50,014 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 11:57:50,079 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 11:57:50,085 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 11:57:50,095 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 11:57:50,095 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 11:57:50,095 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 11:57:50,095 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 12:07:44,309 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:07:44,329 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:07:44,329 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:07:44,364 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:07:44,560 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:07:45,860 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:07:45,860 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:07:45,860 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:07:45,860 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:07:45,860 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:07:45,860 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:07:45,861 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:07:45,861 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:07:45,861 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"78c8350f31ae0485e9256cd3990f59f7","message":"Your plan does
+2025-03-13 12:07:45,861 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:07:45,861 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:07:45,866 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 12:07:45,866 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:07:45,873 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:45,884 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:45,884 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:45,884 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:45,884 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:45,884 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:45,884 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:07:48,343 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:07:48,344 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:07:48,345 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:07:48,350 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:07:48,452 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:07:49,862 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:07:49,863 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:07:49,863 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:07:49,863 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:07:49,863 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:07:49,863 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:07:49,863 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:07:49,863 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:07:49,864 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"10ab9de402005081b0e8724cd7c88558","message":"Your plan does
+2025-03-13 12:07:49,864 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:07:49,864 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:07:49,866 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 12:07:49,867 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:07:49,870 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:49,870 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:49,870 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:49,871 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:49,871 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:49,871 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:07:49,871 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:07:49,973 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 12:07:49,973 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 12:07:49,973 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 12:07:49,974 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 12:07:49,974 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 12:07:49,974 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 12:07:49,974 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 12:07:49,976 - core.trading_system - INFO - Setting up market data stream for 1097 symbols
+2025-03-13 12:07:49,976 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 12:07:49,976 - core.trading_system - INFO - Trading system activated
+2025-03-13 12:07:50,137 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 12:07:50,213 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 12:07:50,216 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 12:07:50,225 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 12:07:50,226 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 12:07:50,226 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 12:07:50,226 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 12:14:48,023 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:14:48,044 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:14:48,044 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:14:48,070 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:14:48,545 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:14:50,939 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:14:50,939 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:14:50,939 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:14:50,939 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:14:50,940 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:14:50,940 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:14:50,940 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:14:50,940 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:14:50,940 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"a21729b75d9a041b14697183256aa270","message":"Your plan does
+2025-03-13 12:14:50,940 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:14:50,940 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:14:50,945 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 12:14:50,945 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:14:50,954 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:50,964 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:50,964 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:50,964 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:50,964 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:50,964 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:50,964 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:14:54,260 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:14:54,262 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:14:54,262 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:14:54,271 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:14:54,632 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:14:56,657 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:14:56,658 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:14:56,658 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:14:56,658 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:14:56,658 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:14:56,658 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:14:56,658 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:14:56,658 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:14:56,659 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"c9e097df5559cf96b2d8f9058d4ea9c7","message":"Your plan does
+2025-03-13 12:14:56,659 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:14:56,659 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:14:56,662 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 12:14:56,662 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:14:56,667 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:56,667 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:56,668 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:56,668 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:56,668 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:56,668 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:14:56,668 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:14:56,981 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 12:14:56,981 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 12:14:56,981 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 12:14:56,982 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 12:14:56,982 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 12:14:56,982 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 12:14:56,982 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 12:14:56,984 - core.trading_system - INFO - Setting up market data stream for 1097 symbols
+2025-03-13 12:14:56,984 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 12:14:56,984 - core.trading_system - INFO - Trading system activated
+2025-03-13 12:14:57,641 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 12:14:57,863 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 12:14:57,866 - core.options_strategy - INFO - Loaded 1106 events from cache
+2025-03-13 12:14:57,876 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 12:14:57,876 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 12:14:57,876 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 12:14:57,876 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 12:19:56,676 - apscheduler.executors.default - INFO - Running job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 12:19:56 EDT)" (scheduled at 2025-03-13 12:19:56.667986-04:00)
+2025-03-13 12:19:56,953 - apscheduler.executors.default - INFO - Job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 12:24:56 EDT)" executed successfully
+2025-03-13 12:24:56,677 - apscheduler.executors.default - INFO - Running job "TradingSystem.trading_cycle (trigger: interval[0:10:00], next run at: 2025-03-13 12:34:56 EDT)" (scheduled at 2025-03-13 12:24:56.667798-04:00)
+2025-03-13 12:24:56,677 - apscheduler.executors.default - INFO - Running job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 12:29:56 EDT)" (scheduled at 2025-03-13 12:24:56.667986-04:00)
+2025-03-13 12:24:57,132 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 12:24:57,328 - apscheduler.executors.default - INFO - Job "TradingSystem.monitor_positions (trigger: interval[0:05:00], next run at: 2025-03-13 12:29:56 EDT)" executed successfully
+2025-03-13 12:24:57,491 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 12:24:58,733 - core.options_strategy - INFO - Loaded 1112 earnings events from Finnhub
+2025-03-13 12:24:59,033 - core.options_strategy - INFO - Added 1 economic events
+2025-03-13 12:24:59,045 - core.options_strategy - INFO - Filtered to 1112 relevant events
+2025-03-13 12:24:59,065 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 12:24:59,066 - core.options_strategy - INFO - Analysis complete: processed 0 options in 1.6s
+2025-03-13 12:24:59,066 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 12:24:59,066 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 12:24:59,066 - apscheduler.executors.default - INFO - Job "TradingSystem.trading_cycle (trigger: interval[0:10:00], next run at: 2025-03-13 12:34:56 EDT)" executed successfully
+2025-03-13 12:32:48,683 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:32:48,704 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:32:48,705 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:32:48,724 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:32:48,874 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:32:50,168 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:32:50,169 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:32:50,169 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:32:50,169 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:32:50,169 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:32:50,169 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:32:50,169 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:32:50,169 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:32:50,169 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"42107bcc7f1bb03f837ff5151ace61ef","message":"Your plan does
+2025-03-13 12:32:50,169 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:32:50,169 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:32:50,173 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 12:32:50,173 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:32:50,182 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:50,191 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:50,192 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:50,192 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:50,192 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:50,192 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:50,192 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:32:52,106 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:32:52,107 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:32:52,107 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:32:52,128 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:32:52,226 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:32:53,847 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:32:53,848 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:32:53,848 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:32:53,848 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:32:53,848 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:32:53,848 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:32:53,848 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:32:53,848 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:32:53,848 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"dd3f033418b01077f3c9ccc90057906a","message":"Your plan does
+2025-03-13 12:32:53,849 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:32:53,849 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:32:53,852 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 12:32:53,852 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:32:53,855 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:53,856 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:53,856 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:53,856 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:53,856 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:53,856 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:32:53,857 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:32:54,120 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 12:32:54,120 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 12:32:54,121 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 12:32:54,121 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 12:32:54,121 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 12:32:54,121 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 12:32:54,122 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 12:32:54,123 - core.trading_system - INFO - Setting up market data stream for 1103 symbols
+2025-03-13 12:32:54,123 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 12:32:54,124 - core.trading_system - INFO - Trading system activated
+2025-03-13 12:32:54,549 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 12:32:54,727 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 12:32:54,731 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 12:32:54,741 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 12:32:54,741 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 12:32:54,741 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 12:32:54,741 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 12:46:00,580 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:46:00,600 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:46:00,600 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:46:00,618 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:46:00,809 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:46:02,988 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:46:02,988 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:46:02,988 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:46:02,988 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:46:02,988 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:46:02,988 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:46:02,988 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:46:02,988 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:46:02,989 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"3c84fc42a1a3d7d4fc5605e611660364","message":"Your plan does
+2025-03-13 12:46:02,989 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:46:02,989 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:46:02,993 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 12:46:02,993 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:46:03,001 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:03,012 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:03,012 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:03,012 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:03,013 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:03,013 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:03,013 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:46:05,269 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:46:05,270 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 12:46:05,271 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 12:46:05,277 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 12:46:05,372 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 12:46:06,791 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 12:46:06,791 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 12:46:06,791 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 12:46:06,791 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 12:46:06,791 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 12:46:06,791 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 12:46:06,792 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 12:46:06,792 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 12:46:06,792 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"480f58395a67b9cf598f544e2f9595cd","message":"Your plan does
+2025-03-13 12:46:06,792 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 12:46:06,792 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 12:46:06,796 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 12:46:06,796 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 12:46:06,800 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:06,800 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:06,800 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:06,800 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:06,801 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:06,801 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 12:46:06,801 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 12:46:06,907 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 12:46:06,907 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 12:46:06,907 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 12:46:06,907 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 12:46:06,907 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 12:46:06,907 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 12:46:06,907 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 12:46:06,908 - core.trading_system - INFO - Setting up market data stream for 1103 symbols
+2025-03-13 12:46:06,908 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 12:46:06,908 - core.trading_system - INFO - Trading system activated
+2025-03-13 12:46:07,065 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 12:46:07,135 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 12:46:07,139 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 12:46:07,148 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 12:46:07,148 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 12:46:07,148 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 12:46:07,148 - core.trading_system - INFO - No suitable opportunities found
+2025-03-13 13:05:07,787 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 13:05:07,808 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 13:05:07,808 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 13:05:07,832 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 13:05:08,036 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 13:05:09,890 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 13:05:09,890 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 13:05:09,890 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 13:05:09,890 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 13:05:09,890 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 13:05:09,891 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 13:05:09,891 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 13:05:09,891 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 13:05:09,891 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"295b59b872fedd8e6c5a510fe7b1e93d","message":"Your plan does
+2025-03-13 13:05:09,892 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 13:05:09,892 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 13:05:09,896 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 13:05:09,896 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 13:05:09,903 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:09,912 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:09,913 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:09,913 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:09,913 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:09,913 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:09,913 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 13:05:11,698 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 13:05:11,699 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-13 13:05:11,699 - data.database - INFO - Loaded database config from config.ini
+2025-03-13 13:05:11,705 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-13 13:05:11,822 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-13 13:05:13,042 - core.options_strategy - INFO - API Connection Test Results:
+2025-03-13 13:05:13,043 - core.options_strategy - INFO - ✅ ALPACA: success
+2025-03-13 13:05:13,043 - core.options_strategy - INFO -   Details: Connected to Alpaca paper account
+2025-03-13 13:05:13,043 - core.options_strategy - INFO - ✅ FINNHUB: success
+2025-03-13 13:05:13,043 - core.options_strategy - INFO -   Details: Connected to Finnhub API, got 27673 symbols
+2025-03-13 13:05:13,043 - core.options_strategy - INFO - ❌ ALPHAVANTAGE: failed
+2025-03-13 13:05:13,043 - core.options_strategy - ERROR -   Error: Status code: 200, Response: {
+    "Information": "We have detected your API key as DA5B5IOX7QK5RMJU and our standard API rate li
+2025-03-13 13:05:13,043 - core.options_strategy - INFO - ❌ POLYGON: failed
+2025-03-13 13:05:13,043 - core.options_strategy - ERROR -   Error: Status code: 403, Response: {"status":"NOT_AUTHORIZED","request_id":"9564ef52de69d6b6f2946137a3b13536","message":"Your plan does
+2025-03-13 13:05:13,044 - core.options_strategy - WARNING - Warning: The following APIs have issues: alphavantage, polygon
+2025-03-13 13:05:13,044 - core.options_strategy - WARNING - Real market data may be limited - check API keys and connectivity
+2025-03-13 13:05:13,047 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 13:05:13,047 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-13 13:05:13,051 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:13,051 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:13,051 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:13,051 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:13,051 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:13,051 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-13 13:05:13,052 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-13 13:05:13,158 - apscheduler.scheduler - INFO - Added job "PrecisionOptionsArbitrage.monitor_strategy_performance" to job store "default"
+2025-03-13 13:05:13,158 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-13 13:05:13,158 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-13 13:05:13,159 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-13 13:05:13,159 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-13 13:05:13,159 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-13 13:05:13,160 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-13 13:05:13,161 - core.trading_system - INFO - Setting up market data stream for 1103 symbols
+2025-03-13 13:05:13,162 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-13 13:05:13,162 - core.trading_system - INFO - Trading system activated
+2025-03-13 13:05:13,335 - core.trading_system - INFO - Starting trading cycle
+2025-03-13 13:05:13,401 - core.options_strategy - INFO - Starting opportunity analysis...
+2025-03-13 13:05:13,405 - core.options_strategy - INFO - Loaded 1112 events from cache
+2025-03-13 13:05:13,416 - core.options_strategy - INFO - Analyzing 10 upcoming events
+2025-03-13 13:05:13,416 - core.options_strategy - INFO - Analysis complete: processed 0 options in 0.0s
+2025-03-13 13:05:13,416 - core.options_strategy - INFO - Found 0 viable opportunities out of 0 candidates
+2025-03-13 13:05:13,416 - core.trading_system - INFO - No suitable opportunities found

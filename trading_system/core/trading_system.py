@@ -11,6 +11,8 @@ from datetime import datetime, timedelta
 import pytz
 from typing import Dict, List, Any, Tuple
 
+
+
 # Core scheduler
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
@@ -21,6 +23,8 @@ from alpaca.data.live import StockDataStream
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
+
+
 
 # Initialize logger and timezone
 logger = logging.getLogger(__name__)
@@ -103,6 +107,9 @@ class TradingSystem:
 
         # Initialize system
         self._setup_system()
+
+        self.market_data_stream_manager = None
+
 
     def _setup_system(self):
         """Set up the trading system components and schedules"""
@@ -205,26 +212,31 @@ class TradingSystem:
             except Exception as e:
                 logger.error(f"Error processing message: {e}")
 
-    # Define handlers for different data types
-    async def handle_trade_updates(data):
-        logger.debug(f"Trade update received: {data}")
+    async def _handle_trade(self, trade):
+        """Asynchronous trade update handler"""
+        logger.debug(f"Trade update received: {trade}")
+        # Implement any trade-specific processing here
+        # Can access self attributes and methods
 
-    async def handle_quote_updates(data):
-        for symbol, quote in data.items():
-            # Store latest quote data
-            self.last_quotes[symbol] = {
-                'bid': quote.bid_price,
-                'ask': quote.ask_price,
-                'time': datetime.now(),
-                'spread': quote.ask_price - quote.bid_price
-            }
+    async def _handle_quote(self, quote):
+        """Asynchronous quote update handler"""
+        logger.debug(f"Quote update received: {quote}")
 
-            # Check for any impact on our positions
-            self._check_for_price_alerts(symbol, quote)
+        # Store latest quote data
+        self.last_quotes[quote.symbol] = {
+            'bid': quote.bid_price,
+            'ask': quote.ask_price,
+            'time': datetime.now(),
+            'spread': quote.ask_price - quote.bid_price
+        }
 
-    async def handle_bar_updates(data):
-        for symbol, bar in data.items():
-            logger.debug(f"Bar update for {symbol}: {bar.close}")
+        # Check for any impact on our positions
+        self._check_for_price_alerts(quote.symbol, quote)
+
+    async def _handle_bar(self, bar):
+        """Asynchronous bar update handler"""
+        logger.debug(f"Bar update received: {bar}")
+        # Implement any bar-related processing here
 
     def _setup_market_data_stream(self):
         """Set up real-time market data streaming with Alpaca"""
@@ -259,11 +271,11 @@ class TradingSystem:
             logger.info(f"Setting up market data stream for {len(symbols_to_track)} symbols")
 
             # Set up the connection and event handlers
-            async def start_streaming():
-                # Subscribe to relevant data
-                self.market_data_stream.subscribe_trades(symbols_to_track, handle_trade_updates)
-                self.market_data_stream.subscribe_quotes(symbols_to_track, handle_quote_updates)
-                self.market_data_stream.subscribe_bars(symbols_to_track, handle_bar_updates)
+            async def start_streaming_inner():
+                # Subscribe to relevant data with class method coroutines
+                self.market_data_stream.subscribe_trades(self._handle_trade, *symbols_to_track)
+                self.market_data_stream.subscribe_quotes(self._handle_quote, *symbols_to_track)
+                self.market_data_stream.subscribe_bars(self._handle_bar, *symbols_to_track)
 
                 await self.market_data_stream.run()
 
@@ -271,7 +283,7 @@ class TradingSystem:
             def run_streaming():
                 loop = asyncio.new_event_loop()
                 asyncio.set_event_loop(loop)
-                loop.run_until_complete(start_streaming())
+                loop.run_until_complete(start_streaming_inner())
 
             # Start the streaming thread
             self.stream_thread = threading.Thread(target=run_streaming, daemon=True)

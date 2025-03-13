@@ -9,12 +9,10 @@ An enterprise-grade algorithmic trading platform with:
 
 Built for Mac M2 compatibility
 """
-
 import argparse
 import logging
 import os
 import sys
-from pathlib import Path
 
 # Create necessary directories
 for directory in ['logs', 'data']:
