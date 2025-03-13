@@ -97,6 +97,13 @@ class TradingSystem:
         """Set up the trading system components and schedules"""
         # Set up scheduled tasks
 
+        self.scheduler.add_job(
+            self.strategy.monitor_strategy_performance,
+            CronTrigger(hour=17, minute=30, timezone=EASTERN_TZ),  # 5:30 PM Eastern
+            id='strategy_monitor',
+            replace_existing=True
+        )
+
         # Main trading cycle (during market hours)
         check_interval = int(self.config.get('trading_system', {}).get('check_interval_minutes', 10))
         self.scheduler.add_job(

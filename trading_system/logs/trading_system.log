@@ -605,3 +605,84 @@ LINE 1: SELECT * FROM trades WHERE date(entry_time) = ? OR date(exit...
 2025-03-12 20:18:54,799 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
 2025-03-12 20:18:54,799 - core.trading_system - INFO - Trading system initialized and ready
 2025-03-12 20:18:54,885 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-12 21:05:12,936 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:12,964 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:12,964 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 21:05:12,982 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 21:05:13,197 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 21:05:13,197 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 21:05:13,197 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 21:05:13,197 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 21:05:13,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:13,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:13,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:13,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:13,218 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:13,218 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 21:05:21,393 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:21,394 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:21,394 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 21:05:21,400 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 21:05:21,501 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 21:05:21,502 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 21:05:21,502 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 21:05:21,502 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 21:05:21,504 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:21,505 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:21,505 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:21,505 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:21,505 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:21,506 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 21:05:22,599 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 21:05:22,599 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 21:05:22,599 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 21:05:22,600 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 21:05:22,600 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 21:05:22,600 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 21:05:22,601 - core.trading_system - INFO - Setting up market data stream for 8 symbols
+2025-03-12 21:05:22,602 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-12 21:05:22,602 - core.trading_system - INFO - Trading system activated
+2025-03-12 21:05:24,122 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:24,124 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:24,124 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 21:05:24,130 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 21:05:24,217 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 21:05:24,217 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 21:05:24,218 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 21:05:24,218 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 21:05:24,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:24,222 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:24,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:24,223 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:24,224 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:24,224 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 21:05:24,314 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-12 21:05:25,768 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:25,769 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:25,769 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 21:05:25,777 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 21:05:25,876 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 21:05:25,876 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 21:05:25,876 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 21:05:25,876 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 21:05:25,878 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:25,878 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:25,879 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:25,879 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:25,879 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:25,879 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 21:05:27,126 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:27,127 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 21:05:27,127 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 21:05:27,133 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 21:05:27,227 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 21:05:27,227 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 21:05:27,227 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 21:05:27,227 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 21:05:27,244 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:27,244 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:27,245 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:27,245 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:27,245 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 21:05:27,245 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 21:05:27,344 - core.trading_system - INFO - Daily report generated and sent

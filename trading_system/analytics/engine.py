@@ -252,7 +252,7 @@ class AnalyticsEngine:
 
         # Get today's trades
         today_trades = self.db.execute_query(
-            "SELECT * FROM trades WHERE date(entry_time) = ? OR date(exit_time) = ?",
+            "SELECT * FROM trades WHERE date(entry_time) = %s OR date(exit_time) = %s",
             (today, today)
         )
 
