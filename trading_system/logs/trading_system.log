@@ -1,0 +1,484 @@
+2025-03-12 11:47:58,262 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:47:58,264 - data.database - INFO - Database initialized successfully
+2025-03-12 11:47:58,390 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:47:58,390 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:47:58,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:47:58,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:47:58,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:47:58,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:47:58,393 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:47:58,393 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:50:28,425 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:50:28,427 - data.database - INFO - Database initialized successfully
+2025-03-12 11:50:28,528 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:50:28,528 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:50:28,543 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:50:28,543 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:50:28,544 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:50:28,544 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:50:28,544 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:50:28,544 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:53:17,161 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:53:17,163 - data.database - INFO - Database initialized successfully
+2025-03-12 11:53:17,355 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:53:17,355 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:53:17,381 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:17,381 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:17,381 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:17,381 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:17,381 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:17,382 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:53:58,064 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:53:58,067 - data.database - INFO - Database initialized successfully
+2025-03-12 11:53:58,168 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:53:58,168 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:53:58,178 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:58,178 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:58,179 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:58,179 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:58,179 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:53:58,179 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:54:06,166 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:54:06,167 - data.database - INFO - Database initialized successfully
+2025-03-12 11:54:06,278 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:54:06,279 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:54:06,280 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:06,280 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:06,280 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:06,281 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:06,281 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:06,281 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:54:06,286 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 11:54:06,286 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 11:54:06,287 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 11:54:06,287 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 11:54:06,287 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 11:54:06,287 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 11:54:06,289 - core.trading_system - INFO - Trading system activated
+2025-03-12 11:54:06,327 - core.trading_system - INFO - Starting trading cycle
+2025-03-12 11:54:06,374 - core.trading_system - INFO - No suitable opportunities found
+2025-03-12 11:54:14,489 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:54:14,491 - data.database - INFO - Database initialized successfully
+2025-03-12 11:54:14,594 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:54:14,594 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:54:14,596 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:14,596 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:14,597 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:14,597 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:14,597 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:14,597 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:54:16,157 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:54:16,158 - data.database - INFO - Database initialized successfully
+2025-03-12 11:54:16,370 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:54:16,371 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:54:16,373 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:16,373 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:16,373 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:16,373 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:16,373 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:16,374 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:54:18,076 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:54:18,077 - data.database - INFO - Database initialized successfully
+2025-03-12 11:54:18,168 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:54:18,169 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:54:18,171 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:18,171 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:18,171 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:18,171 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:18,171 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:18,172 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:54:35,030 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:54:35,031 - data.database - INFO - Database initialized successfully
+2025-03-12 11:54:35,136 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:54:35,137 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:54:35,138 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:35,138 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:35,138 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:35,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:35,139 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:35,139 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:54:35,144 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 11:54:35,146 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 11:54:35,146 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 11:54:35,146 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 11:54:35,146 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 11:54:35,146 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 11:54:35,146 - core.trading_system - INFO - Trading system activated
+2025-03-12 11:54:35,178 - core.trading_system - INFO - Starting trading cycle
+2025-03-12 11:54:35,220 - core.trading_system - INFO - No suitable opportunities found
+2025-03-12 11:54:45,937 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:54:45,938 - data.database - INFO - Database initialized successfully
+2025-03-12 11:54:46,045 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:54:46,045 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:54:46,046 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:46,046 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:46,046 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:46,046 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:46,046 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:54:46,046 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:54:46,051 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 11:54:46,051 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 11:54:46,052 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 11:54:46,053 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 11:54:46,053 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 11:54:46,053 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 11:54:46,053 - core.trading_system - INFO - Trading system activated
+2025-03-12 11:54:46,090 - core.trading_system - INFO - Starting trading cycle
+2025-03-12 11:54:46,142 - core.trading_system - INFO - No suitable opportunities found
+2025-03-12 11:55:27,385 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:27,387 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:27,500 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:27,500 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:27,501 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:27,502 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:27,502 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:27,502 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:27,502 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:27,502 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:55:38,691 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:38,692 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:38,849 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:38,849 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:38,851 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:38,852 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:38,852 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:38,852 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:38,852 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:38,852 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:55:41,045 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:41,046 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:41,150 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:41,150 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:41,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:41,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:41,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:41,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:41,152 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:41,152 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:55:41,904 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:41,905 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:42,006 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:42,007 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:42,008 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:42,008 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:42,008 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:42,008 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:42,009 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:42,009 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:55:42,956 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:42,957 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:43,064 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:43,064 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:43,066 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,066 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,067 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,067 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,067 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,067 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:55:43,550 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:43,551 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:43,652 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:43,653 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:43,654 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,654 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,655 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,655 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,655 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:43,655 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:55:44,754 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:44,755 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:44,856 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:44,856 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:44,858 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:44,858 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:44,858 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:44,858 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:44,858 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:44,858 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 11:55:51,611 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 11:55:51,612 - data.database - INFO - Database initialized successfully
+2025-03-12 11:55:51,721 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 11:55:51,722 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 11:55:51,723 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:51,724 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:51,724 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:51,724 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:51,724 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 11:55:51,724 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:29:08,660 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:29:08,661 - data.database - INFO - Database initialized successfully
+2025-03-12 12:29:08,868 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:29:08,869 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:29:08,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:08,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:08,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:08,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:08,883 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:08,883 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:29:12,129 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:29:12,130 - data.database - INFO - Database initialized successfully
+2025-03-12 12:29:12,225 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:29:12,225 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:29:12,226 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:12,226 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:12,227 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:12,227 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:12,227 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:29:12,227 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:29:12,233 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 12:29:12,233 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 12:29:12,233 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 12:29:12,234 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 12:29:12,234 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 12:29:12,234 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 12:29:12,234 - core.trading_system - INFO - Trading system activated
+2025-03-12 12:29:12,270 - core.trading_system - INFO - Starting trading cycle
+2025-03-12 12:29:12,311 - core.trading_system - INFO - No suitable opportunities found
+2025-03-12 12:31:11,753 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:31:11,755 - data.database - INFO - Database initialized successfully
+2025-03-12 12:31:11,864 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:31:11,865 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:31:11,867 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:11,867 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:11,867 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:11,868 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:11,868 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:11,868 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:31:11,876 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-12 12:31:40,377 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:31:40,378 - data.database - INFO - Database initialized successfully
+2025-03-12 12:31:40,494 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:31:40,494 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:31:40,494 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:40,494 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:40,494 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:40,494 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:40,495 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:40,495 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:31:40,499 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 12:31:40,499 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 12:31:40,499 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 12:31:40,500 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 12:31:40,500 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 12:31:40,500 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 12:31:40,502 - core.trading_system - INFO - Trading system activated
+2025-03-12 12:31:40,536 - core.trading_system - INFO - Starting trading cycle
+2025-03-12 12:31:40,581 - core.trading_system - INFO - No suitable opportunities found
+2025-03-12 12:31:43,343 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:31:43,344 - data.database - INFO - Database initialized successfully
+2025-03-12 12:31:43,444 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:31:43,445 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:31:43,446 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:43,447 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:43,447 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:43,447 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:43,447 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:43,447 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:31:43,454 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-12 12:31:59,806 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:31:59,808 - data.database - INFO - Database initialized successfully
+2025-03-12 12:31:59,911 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:31:59,911 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:31:59,913 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:59,913 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:59,913 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:59,914 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:59,914 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:31:59,914 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:31:59,920 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 12:31:59,920 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 12:31:59,921 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 12:31:59,921 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 12:31:59,921 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 12:31:59,921 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 12:31:59,921 - core.trading_system - INFO - Trading system activated
+2025-03-12 12:31:59,955 - core.trading_system - INFO - Starting trading cycle
+2025-03-12 12:32:00,004 - core.trading_system - INFO - No suitable opportunities found
+2025-03-12 12:32:29,113 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:32:29,114 - data.database - INFO - Database initialized successfully
+2025-03-12 12:32:29,218 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:32:29,218 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:32:29,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:29,220 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:29,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:29,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:29,221 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:29,221 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:32:32,820 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:32:32,821 - data.database - INFO - Database initialized successfully
+2025-03-12 12:32:32,922 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:32:32,922 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:32:32,923 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:32,923 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:32,924 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:32,924 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:32,924 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:32,924 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:32:32,934 - core.trading_system - INFO - Daily report generated and sent
+2025-03-12 12:32:37,961 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:32:37,963 - data.database - INFO - Database initialized successfully
+2025-03-12 12:32:38,061 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:32:38,061 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:32:38,063 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:38,063 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:38,063 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:38,064 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:38,064 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:38,065 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:32:39,429 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:32:39,430 - data.database - INFO - Database initialized successfully
+2025-03-12 12:32:39,533 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:32:39,533 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:32:39,534 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:39,535 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:39,535 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:39,535 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:39,535 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:39,535 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:32:43,170 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:32:43,171 - data.database - INFO - Database initialized successfully
+2025-03-12 12:32:43,282 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:32:43,283 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:32:43,284 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:43,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:43,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:43,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:43,285 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:43,285 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 12:32:43,996 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 12:32:43,996 - data.database - INFO - Database initialized successfully
+2025-03-12 12:32:44,098 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 12:32:44,098 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized
+2025-03-12 12:32:44,099 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:44,099 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:44,099 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:44,099 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:44,099 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 12:32:44,099 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 18:26:24,600 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:28:36,402 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:36:32,466 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:36:32,488 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:36:32,488 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:36:32,507 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:36:32,709 - core.options_strategy - ERROR - Error loading account: {"message": "forbidden."}
+
+2025-03-12 18:38:38,960 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:38:38,970 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:38:38,970 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:38:38,986 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:38:39,088 - core.options_strategy - ERROR - Error loading account: {"message": "forbidden."}
+
+2025-03-12 18:42:49,829 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:42:49,849 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:42:49,849 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:42:49,871 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:42:50,064 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 18:42:50,064 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 18:42:50,064 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 18:42:50,064 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 18:42:50,084 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:50,084 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:50,084 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:50,084 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:50,084 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:50,084 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 18:42:54,960 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:42:54,961 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:42:54,961 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:42:54,974 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:42:55,073 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 18:42:55,073 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 18:42:55,073 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 18:42:55,074 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 18:42:55,075 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:55,076 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:55,076 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:55,076 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:55,076 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:42:55,076 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 18:42:55,256 - apscheduler.scheduler - INFO - Added job "TradingSystem.trading_cycle" to job store "default"
+2025-03-12 18:42:55,256 - apscheduler.scheduler - INFO - Added job "TradingSystem.monitor_positions" to job store "default"
+2025-03-12 18:42:55,256 - apscheduler.scheduler - INFO - Added job "TradingSystem.generate_daily_report" to job store "default"
+2025-03-12 18:42:55,256 - apscheduler.scheduler - INFO - Added job "TradingSystem.system_health_check" to job store "default"
+2025-03-12 18:42:55,257 - apscheduler.scheduler - INFO - Added job "TradingSystem.update_risk_metrics" to job store "default"
+2025-03-12 18:42:55,257 - apscheduler.scheduler - INFO - Scheduler started
+2025-03-12 18:42:55,259 - core.trading_system - INFO - Setting up market data stream for 8 symbols
+2025-03-12 18:42:55,259 - core.trading_system - INFO - Market data streaming started successfully
+2025-03-12 18:42:55,260 - core.trading_system - INFO - Trading system activated
+2025-03-12 18:43:02,655 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:43:02,659 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:43:02,659 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:43:02,674 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:43:02,834 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 18:43:02,834 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 18:43:02,834 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 18:43:02,834 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 18:43:02,836 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:02,836 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:02,836 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:02,836 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:02,836 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:02,836 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 18:43:02,935 - core.trading_system - INFO - Trading cycle skipped - trading inactive
+2025-03-12 18:43:15,493 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:43:15,494 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:43:15,495 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:43:15,503 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:43:15,661 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 18:43:15,661 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 18:43:15,661 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 18:43:15,661 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 18:43:15,664 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:15,665 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:15,665 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:15,665 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:15,665 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:43:15,666 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 18:43:15,774 - data.database - ERROR - Error executing query: syntax error at or near "OR"
+LINE 1: SELECT * FROM trades WHERE date(entry_time) = ? OR date(exit...
+                                                        ^
+
+2025-03-12 18:43:15,776 - core.trading_system - INFO - Daily report generated and sent
+2025-03-12 18:44:02,882 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:44:02,885 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:44:02,885 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:44:02,894 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:44:03,000 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 18:44:03,000 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 18:44:03,000 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 18:44:03,000 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 18:44:03,003 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:03,003 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:03,003 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:03,003 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:03,003 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:03,003 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 18:44:05,759 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:44:05,760 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:44:05,761 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:44:05,770 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:44:05,867 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 18:44:05,867 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 18:44:05,868 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 18:44:05,868 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 18:44:05,871 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:05,871 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:05,872 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:05,872 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:05,872 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:44:05,872 - core.trading_system - INFO - Trading system initialized and ready
+2025-03-12 18:49:51,723 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:49:51,745 - config.settings - INFO - Configuration loaded from config.ini
+2025-03-12 18:49:51,745 - data.database - INFO - Loaded database config from config.ini
+2025-03-12 18:49:51,762 - data.database - INFO - PostgreSQL database initialized at localhost:5432/trading_system
+2025-03-12 18:49:51,888 - core.options_strategy - INFO - Account loaded: $99989.32 portfolio value, $199978.64 buying power
+2025-03-12 18:49:51,888 - core.options_strategy - WARNING - No events found from any source - using fallback watchlist
+2025-03-12 18:49:51,888 - core.options_strategy - INFO - Created 8 watchlist events as fallback
+2025-03-12 18:49:51,888 - core.options_strategy - INFO - Precision Options Arbitrage strategy initialized with live market data
+2025-03-12 18:49:51,901 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:49:51,901 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:49:51,901 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:49:51,901 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:49:51,901 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-12 18:49:51,902 - core.trading_system - INFO - Trading system initialized and ready

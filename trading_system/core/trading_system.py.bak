@@ -1,72 +1,50 @@
 """
-Main trading system coordinator class with real market data integration.
+Main trading system coordinator class.
 Integrates all components and manages the trading lifecycle.
 """
 
 import logging
 import threading
 import queue
-import asyncio
-from datetime import datetime, timedelta
+from datetime import datetime
 import pytz
-from typing import Dict, List, Any, Tuple
-
-# Core scheduler
+from typing import Dict, Any, Tuple, List
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 
-# Alpaca API
-from alpaca.trading.client import TradingClient
-from alpaca.data.live import StockDataStream
-from alpaca.data.historical import StockHistoricalDataClient
-from alpaca.data.requests import StockBarsRequest
-from alpaca.data.timeframe import TimeFrame
+# Import components
+from core.options_strategy import PrecisionOptionsArbitrage
+from data.database import DatabaseManager
+from risk.manager import RiskManager
+from analytics.engine import AnalyticsEngine
+from ui.notifications import NotificationSystem
 
-# Initialize logger and timezone
 logger = logging.getLogger(__name__)
 EASTERN_TZ = pytz.timezone('US/Eastern')
 
 
 class TradingSystem:
     """
-    Main trading system that coordinates all components with live market data
+    Main trading system that coordinates all components
     """
 
     def __init__(self, config: Dict[str, Any]):
         """Initialize the trading system with configuration"""
         self.config = config
 
-        # Extract Alpaca credentials
-        alpaca_config = config.get('alpaca', {})
-        self.api_key = alpaca_config.get('api_key', '')
-        self.api_secret = alpaca_config.get('api_secret', '')
-
-        # Validate API credentials
-        if not self.api_key or not self.api_secret:
-            raise ValueError("Alpaca API credentials are required")
-
         # Initialize database
-        from data.database import DatabaseManager
         self.db_manager = DatabaseManager()
 
-        # Initialize trading clients
-        self.trading_client = TradingClient(self.api_key, self.api_secret, paper=True)
-        self.data_client = StockHistoricalDataClient(self.api_key, self.api_secret)
-
         # Initialize trading strategy
-        from core.options_strategy import PrecisionOptionsArbitrage
-        self.strategy = PrecisionOptionsArbitrage(alpaca_config)
+        self.strategy = PrecisionOptionsArbitrage(config.get('alpaca', {}))
 
         # Initialize risk manager
-        from risk.manager import RiskManager
         self.risk_manager = RiskManager(self.db_manager, config.get('risk_management', {}))
 
         # Initialize analytics engine
-        from analytics.engine import AnalyticsEngine
         self.analytics = AnalyticsEngine(self.db_manager)
 
         # Initialize notification system
-        from ui.notifications import NotificationSystem
         self.notifications = NotificationSystem(config.get('notifications', {}))
 
         # Initialize scheduler
@@ -76,10 +54,6 @@ class TradingSystem:
         self.trading_active = False
         self.system_ready = False
         self.last_run_time = None
-        self.market_data_stream = None
-        self.stream_thread = None
-        self.last_quotes = {}  # Store most recent quotes
-
         self.daily_stats = {
             'trades_executed': 0,
             'trades_exited': 0,
@@ -187,129 +161,9 @@ class TradingSystem:
             except Exception as e:
                 logger.error(f"Error processing message: {e}")
 
-    def _setup_market_data_stream(self):
-        """Set up real-time market data streaming with Alpaca"""
-        if self.market_data_stream:
-            logger.info("Market data stream already running")
-            return
-
-        try:
-            self.market_data_stream = StockDataStream(self.api_key, self.api_secret)
-
-            # Find symbols to track based on open positions and watchlist
-            symbols_to_track = set()
-
-            # Add symbols from open positions
-            open_positions = self.db_manager.get_open_positions()
-            for position in open_positions:
-                underlying = position.get('underlying', '')
-                if underlying:
-                    symbols_to_track.add(underlying)
-
-            # Add symbols from event calendar
-            if hasattr(self.strategy, 'events_calendar'):
-                for event in self.strategy.events_calendar:
-                    symbols_to_track.add(event['symbol'])
-
-            symbols_to_track = list(symbols_to_track)
-
-            if not symbols_to_track:
-                # Default watchlist if no specific symbols
-                symbols_to_track = ['SPY', 'QQQ', 'AAPL', 'MSFT', 'AMZN', 'GOOGL']
-
-            logger.info(f"Setting up market data stream for {len(symbols_to_track)} symbols")
-
-            # Define handlers for different data types
-            async def handle_trade_updates(data):
-                logger.debug(f"Trade update received: {data}")
-
-            async def handle_quote_updates(data):
-                for symbol, quote in data.items():
-                    # Store latest quote data
-                    self.last_quotes[symbol] = {
-                        'bid': quote.bid_price,
-                        'ask': quote.ask_price,
-                        'time': datetime.now(),
-                        'spread': quote.ask_price - quote.bid_price
-                    }
-
-                    # Check for any impact on our positions
-                    self._check_for_price_alerts(symbol, quote)
-
-            async def handle_bar_updates(data):
-                for symbol, bar in data.items():
-                    logger.debug(f"Bar update for {symbol}: {bar.close}")
-
-            # Set up the connection and event handlers
-            async def start_streaming():
-                # Subscribe to relevant data
-                self.market_data_stream.subscribe_trades(symbols_to_track, handle_trade_updates)
-                self.market_data_stream.subscribe_quotes(symbols_to_track, handle_quote_updates)
-                self.market_data_stream.subscribe_bars(symbols_to_track, handle_bar_updates)
-
-                await self.market_data_stream.run()
-
-            # Run the streaming in a separate thread
-            def run_streaming():
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
-                loop.run_until_complete(start_streaming())
-
-            # Start the streaming thread
-            self.stream_thread = threading.Thread(target=run_streaming, daemon=True)
-            self.stream_thread.start()
-
-            logger.info("Market data streaming started successfully")
-
-        except Exception as e:
-            logger.error(f"Failed to set up market data stream: {e}")
-            self.market_data_stream = None
-
-    def _check_for_price_alerts(self, symbol: str, quote: Any):
-        """Check if a price update should trigger alerts for open positions"""
-        if not hasattr(quote, 'bid_price') or not hasattr(quote, 'ask_price'):
-            return
-
-        current_price = float(quote.bid_price)  # Use bid for conservative valuation
-
-        # Check all positions with this underlying
-        open_positions = self.db_manager.get_open_positions()
-        for position in open_positions:
-            if position.get('underlying') == symbol:
-                # Calculate unrealized P&L
-                entry_price = position.get('entry_price', 0)
-                contracts = position.get('quantity', 0)
-
-                if entry_price and contracts:
-                    entry_value = entry_price * contracts * 100
-                    # For options we'd need the actual option price, but this is a rough estimate
-                    current_value = entry_value * (1 + (current_price / position.get('strike', 100) - 1))
-                    pnl_pct = (current_value / entry_value - 1) * 100
-
-                    # Check for significant price movements
-                    if pnl_pct > 20:  # Profitable position
-                        self.message_queue.put({
-                            'type': 'notification',
-                            'message': f"Position {position['symbol']} is up {pnl_pct:.1f}% - consider taking profit",
-                            'level': 'info'
-                        })
-                    elif pnl_pct < -15:  # Losing position
-                        self.message_queue.put({
-                            'type': 'notification',
-                            'message': f"Position {position['symbol']} is down {abs(pnl_pct):.1f}% - monitor closely",
-                            'level': 'warning'
-                        })
-
     def is_market_open(self) -> bool:
-        """Check if the market is currently open using Alpaca API"""
+        """Check if the market is currently open"""
         try:
-            # Get the clock from Alpaca
-            clock = self.trading_client.get_clock()
-            return clock.is_open
-        except Exception as e:
-            logger.error(f"Error checking market hours via API: {e}")
-
-            # Fallback to time-based check
             current_time = datetime.now(EASTERN_TZ)
 
             # Check if it's a weekday
@@ -328,6 +182,10 @@ class TradingSystem:
 
             return market_open <= current_time <= market_close
 
+        except Exception as e:
+            logger.error(f"Error checking market hours: {e}")
+            return False
+
     def start_trading(self):
         """Start the trading system"""
         if not self.system_ready:
@@ -342,9 +200,6 @@ class TradingSystem:
             # Start the scheduler
             if not self.scheduler.running:
                 self.scheduler.start()
-
-            # Start market data streaming
-            self._setup_market_data_stream()
 
             # Set trading state
             self.trading_active = True
@@ -571,7 +426,7 @@ class TradingSystem:
 
             # Calculate position values
             open_positions = self.strategy.get_positions()
-            open_positions_value = sum(p.get('market_value', 0) for p in open_positions)
+            open_positions_value = sum(p['value'] for p in open_positions)
 
             # Create snapshot
             snapshot = {
@@ -657,23 +512,6 @@ class TradingSystem:
                     'level': 'warning'
                 })
 
-            # Check Alpaca API connectivity
-            try:
-                clock = self.trading_client.get_clock()
-                logger.info(f"Alpaca API check: OK (Market is {'open' if clock.is_open else 'closed'})")
-            except Exception as e:
-                logger.error(f"Alpaca API check failed: {e}")
-                self.message_queue.put({
-                    'type': 'notification',
-                    'message': f"Alpaca API connectivity issue: {e}",
-                    'level': 'error'
-                })
-
-            # Check market data stream
-            if self.trading_active and not self.market_data_stream:
-                logger.warning("Market data stream not running - attempting to restart")
-                self._setup_market_data_stream()
-
         except Exception as e:
             logger.error(f"Error in system health check: {e}")
 
@@ -690,9 +528,8 @@ class TradingSystem:
         latest_risk = risk_metrics[-1] if risk_metrics else {}
 
         # Get scheduler status
-        jobs = {}
-        for job in self.scheduler.get_jobs():
-            jobs[job.id] = str(job.next_run_time) if hasattr(job, 'next_run_time') else 'Unknown'
+        jobs = {job.id: str(getattr(job, 'next_run_time', 'Unknown')) for job in self.scheduler.get_jobs()}
+
 
         return {
             'trading_active': self.trading_active,
@@ -706,6 +543,5 @@ class TradingSystem:
             'scheduler_status': {
                 'running': self.scheduler.running,
                 'jobs': jobs
-            },
-            'market_data_stream': 'active' if self.market_data_stream else 'inactive'
+            }
         }

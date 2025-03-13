@@ -66,6 +66,33 @@ class ConfigManager:
                 if key not in config_dict['risk_management']:
                     config_dict['risk_management'][key] = default
 
+        # Add database defaults
+        if 'database' in config_dict:
+            db_defaults = {
+                'db_type': 'sqlite',
+                'sqlite_path': 'data/trading_system.db',
+                'postgres_host': 'localhost',
+                'postgres_port': '5432',
+                'postgres_user': 'postgres',
+                'postgres_password': '',
+                'postgres_dbname': 'trading_system'
+            }
+
+            for key, default in db_defaults.items():
+                if key not in config_dict['database']:
+                    config_dict['database'][key] = default
+        else:
+            # Create database section with defaults
+            config_dict['database'] = {
+                'db_type': 'sqlite',
+                'sqlite_path': 'data/trading_system.db',
+                'postgres_host': 'localhost',
+                'postgres_port': '5432',
+                'postgres_user': 'postgres',
+                'postgres_password': '',
+                'postgres_dbname': 'trading_system'
+            }
+
         return config_dict
 
     def _create_default_config(self) -> Dict[str, Any]:
@@ -76,6 +103,15 @@ class ConfigManager:
             'alpaca': {
                 'api_key': '',
                 'api_secret': ''
+            },
+            'finnhub': {
+                'api_key': ''
+            },
+            'alphavantage': {
+                'api_key': ''
+            },
+            'polygon': {
+                'api_key': ''
             },
             'trading_system': {
                 'trading_hours_start': '09:30',
@@ -95,6 +131,15 @@ class ConfigManager:
                 'max_daily_drawdown': '0.03',
                 'max_total_drawdown': '0.10',
                 'circuit_breakers_enabled': 'true'
+            },
+            'database': {
+                'db_type': 'sqlite',
+                'sqlite_path': 'data/trading_system.db',
+                'postgres_host': 'localhost',
+                'postgres_port': '5432',
+                'postgres_user': 'postgres',
+                'postgres_password': '',
+                'postgres_dbname': 'trading_system'
             },
             'notifications': {
                 'enabled': 'true'
