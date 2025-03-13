@@ -53,9 +53,20 @@ class TradingSystem:
         self.trading_client = TradingClient(self.api_key, self.api_secret, paper=True)
         self.data_client = StockHistoricalDataClient(self.api_key, self.api_secret)
 
+        # Create a clean API configuration object
+        api_config = {
+            'alpaca': {
+                'api_key': self.api_key,
+                'api_secret': self.api_secret
+            },
+            'finnhub': {'api_key': config.get('finnhub', {}).get('api_key', '')},
+            'alphavantage': {'api_key': config.get('alphavantage', {}).get('api_key', '')},
+            'polygon': {'api_key': config.get('polygon', {}).get('api_key', '')}
+        }
+
         # Initialize trading strategy
         from core.options_strategy import PrecisionOptionsArbitrage
-        self.strategy = PrecisionOptionsArbitrage(alpaca_config)
+        self.strategy = PrecisionOptionsArbitrage(api_config)
 
         # Initialize risk manager
         from risk.manager import RiskManager
@@ -194,6 +205,27 @@ class TradingSystem:
             except Exception as e:
                 logger.error(f"Error processing message: {e}")
 
+    # Define handlers for different data types
+    async def handle_trade_updates(data):
+        logger.debug(f"Trade update received: {data}")
+
+    async def handle_quote_updates(data):
+        for symbol, quote in data.items():
+            # Store latest quote data
+            self.last_quotes[symbol] = {
+                'bid': quote.bid_price,
+                'ask': quote.ask_price,
+                'time': datetime.now(),
+                'spread': quote.ask_price - quote.bid_price
+            }
+
+            # Check for any impact on our positions
+            self._check_for_price_alerts(symbol, quote)
+
+    async def handle_bar_updates(data):
+        for symbol, bar in data.items():
+            logger.debug(f"Bar update for {symbol}: {bar.close}")
+
     def _setup_market_data_stream(self):
         """Set up real-time market data streaming with Alpaca"""
         if self.market_data_stream:
@@ -225,27 +257,6 @@ class TradingSystem:
                 symbols_to_track = ['SPY', 'QQQ', 'AAPL', 'MSFT', 'AMZN', 'GOOGL']
 
             logger.info(f"Setting up market data stream for {len(symbols_to_track)} symbols")
-
-            # Define handlers for different data types
-            async def handle_trade_updates(data):
-                logger.debug(f"Trade update received: {data}")
-
-            async def handle_quote_updates(data):
-                for symbol, quote in data.items():
-                    # Store latest quote data
-                    self.last_quotes[symbol] = {
-                        'bid': quote.bid_price,
-                        'ask': quote.ask_price,
-                        'time': datetime.now(),
-                        'spread': quote.ask_price - quote.bid_price
-                    }
-
-                    # Check for any impact on our positions
-                    self._check_for_price_alerts(symbol, quote)
-
-            async def handle_bar_updates(data):
-                for symbol, bar in data.items():
-                    logger.debug(f"Bar update for {symbol}: {bar.close}")
 
             # Set up the connection and event handlers
             async def start_streaming():

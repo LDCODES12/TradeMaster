@@ -75,6 +75,21 @@ class TradingSystemCLI:
                     else:
                         print("Failed to stop trading system")
 
+            elif command in ['test_api', 'api']:
+                print("Testing API connections...")
+                results = self.trading_system.strategy.test_api_connections()
+
+                # Print results in a nice table
+                print("\nAPI Connection Test Results:")
+                headers = ["API", "Status", "Details"]
+                rows = []
+                for api, result in results.items():
+                    status = "✅ SUCCESS" if result['status'] == 'success' else "❌ FAILED"
+                    details = result.get('details', result.get('error', 'No details'))
+                    rows.append([api.upper(), status, details])
+
+                print(tabulate(rows, headers=headers, tablefmt="simple"))
+
             elif command in ['positions', 'pos', 'p']:
                 self._show_open_positions()
 
@@ -105,6 +120,7 @@ class TradingSystemCLI:
                 self.trading_system.monitor_positions()
                 print("Position monitoring completed")
 
+
             elif command in ['clear', 'cls']:
                 os.system('cls' if os.name == 'nt' else 'clear')
                 self._print_header()
@@ -112,6 +128,8 @@ class TradingSystemCLI:
             else:
                 print(f"Unknown command: {command}")
                 print("Type 'help' for available commands")
+
+
 
     def _show_help(self):
         """Show help menu"""

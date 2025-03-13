@@ -61,6 +61,19 @@ def create_dashboard(trading_system):
         trading_system.generate_daily_report()
         st.sidebar.success("Daily report generated")
 
+    # ADD YOUR CODE HERE - right after the existing buttons
+    if st.sidebar.button("Test API Connections", key="test_apis"):
+        with st.spinner("Testing API connections..."):
+            results = trading_system.strategy.test_api_connections()
+
+        # Display results in a nice table
+        st.subheader("API Connection Test Results")
+        for api, result in results.items():
+            if result['status'] == 'success':
+                st.success(f"**{api.upper()}**: {result.get('details', 'Connected')}")
+            else:
+                st.error(f"**{api.upper()}**: {result.get('error', 'Failed to connect')}")
+
     # Dashboard selection
     st.sidebar.subheader("Dashboard Views")
     dashboard_view = st.sidebar.radio(

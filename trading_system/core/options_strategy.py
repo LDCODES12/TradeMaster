@@ -32,12 +32,15 @@ class PrecisionOptionsArbitrage:
     using real market data and events
     """
 
-    def __init__(self, config: Dict[str, Any]):
+    def __init__(self, api_config: Dict[str, Dict[str, str]]):
         """Initialize the strategy with API connections"""
-        # API credentials
-        self.config = config
-        self.api_key = config.get('api_key', '')
-        self.api_secret = config.get('api_secret', '')
+        # Store the config
+        self.config = api_config
+
+        # Get Alpaca credentials
+        alpaca = api_config.get('alpaca', {})
+        self.api_key = alpaca.get('api_key', '')
+        self.api_secret = alpaca.get('api_secret', '')
 
         # Initialize API clients
         if not self.api_key or not self.api_secret:
@@ -48,14 +51,10 @@ class PrecisionOptionsArbitrage:
         self.trading_client = TradingClient(self.api_key, self.api_secret, paper=True)
         self.data_client = StockHistoricalDataClient(self.api_key, self.api_secret)
 
-        # Finnhub for events calendar (if available)
-        self.finnhub_key = config.get('finnhub', {}).get('api_key', '')
-
-        # AlphaVantage as fallback for fundamentals
-        self.alpha_key = config.get('alphavantage', {}).get('api_key', '')
-
-        # Polygon for additional market data (if needed)
-        self.polygon_key = config.get('polygon', {}).get('api_key', '')
+        # Get API keys for other services
+        self.finnhub_key = api_config.get('finnhub', {}).get('api_key', '')
+        self.alpha_key = api_config.get('alphavantage', {}).get('api_key', '')
+        self.polygon_key = api_config.get('polygon', {}).get('api_key', '')
 
         # Strategy state
         self.positions = []
@@ -78,6 +77,22 @@ class PrecisionOptionsArbitrage:
         # Load account info
         self._load_account()
 
+        # Test API connections and log results
+        api_status = self.test_api_connections()
+
+        # Check if any required APIs failed
+        if api_status['alpaca']['status'] != 'success':
+            logger.error("CRITICAL: Alpaca API connection failed. Trading cannot proceed.")
+            raise RuntimeError("Failed to connect to Alpaca API - check credentials")
+
+        # Warn about missing or failed secondary APIs
+        missing_apis = [api for api, result in api_status.items()
+                        if api != 'alpaca' and result['status'] != 'success']
+
+        if missing_apis:
+            logger.warning(f"Warning: The following APIs have issues: {', '.join(missing_apis)}")
+            logger.warning("Real market data may be limited - check API keys and connectivity")
+
         # Load events calendar
         self.events_calendar = self._load_events_calendar()
 
@@ -96,6 +111,87 @@ class PrecisionOptionsArbitrage:
         except Exception as e:
             logger.error(f"Error loading account: {e}")
             raise RuntimeError("Failed to load account information") from e
+
+    def test_api_connections(self):
+        """Test all API connections and report status"""
+        results = {}
+
+        # Test Alpaca connection
+        try:
+            account = self.trading_client.get_account()
+            results['alpaca'] = {
+                'status': 'success',
+                'details': f"Connected to Alpaca {'paper' if account.account_number.startswith('PA') else 'live'} account",
+                'account_id': account.account_number
+            }
+        except Exception as e:
+            results['alpaca'] = {'status': 'failed', 'error': str(e)}
+
+        # Test Finnhub connection
+        if self.finnhub_key:
+            try:
+                url = f"https://finnhub.io/api/v1/stock/symbol?exchange=US&token={self.finnhub_key}"
+                response = requests.get(url, timeout=10)
+                if response.status_code == 200:
+                    results['finnhub'] = {
+                        'status': 'success',
+                        'details': f"Connected to Finnhub API, got {len(response.json())} symbols"
+                    }
+                else:
+                    results['finnhub'] = {
+                        'status': 'failed',
+                        'error': f"Status code: {response.status_code}, Response: {response.text[:100]}"
+                    }
+            except Exception as e:
+                results['finnhub'] = {'status': 'failed', 'error': str(e)}
+        else:
+            results['finnhub'] = {'status': 'missing', 'error': 'No API key provided'}
+
+        # Test Alpha Vantage connection
+        if self.alpha_key:
+            try:
+                url = f"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=SPY&apikey={self.alpha_key}"
+                response = requests.get(url, timeout=10)
+                if response.status_code == 200 and "Global Quote" in response.text:
+                    results['alphavantage'] = {'status': 'success', 'details': "Connected to Alpha Vantage API"}
+                else:
+                    results['alphavantage'] = {
+                        'status': 'failed',
+                        'error': f"Status code: {response.status_code}, Response: {response.text[:100]}"
+                    }
+            except Exception as e:
+                results['alphavantage'] = {'status': 'failed', 'error': str(e)}
+        else:
+            results['alphavantage'] = {'status': 'missing', 'error': 'No API key provided'}
+
+        # Test Polygon connection
+        if self.polygon_key:
+            try:
+                url = f"https://api.polygon.io/v2/aggs/ticker/AAPL/range/1/day/2023-01-09/2023-01-09?apiKey={self.polygon_key}"
+                response = requests.get(url, timeout=10)
+                if response.status_code == 200:
+                    results['polygon'] = {'status': 'success', 'details': "Connected to Polygon API"}
+                else:
+                    results['polygon'] = {
+                        'status': 'failed',
+                        'error': f"Status code: {response.status_code}, Response: {response.text[:100]}"
+                    }
+            except Exception as e:
+                results['polygon'] = {'status': 'failed', 'error': str(e)}
+        else:
+            results['polygon'] = {'status': 'missing', 'error': 'No API key provided'}
+
+        # Print diagnostic information
+        logger.info("API Connection Test Results:")
+        for api, result in results.items():
+            status_icon = "✅" if result['status'] == 'success' else "❌"
+            logger.info(f"{status_icon} {api.upper()}: {result['status']}")
+            if result['status'] == 'success':
+                logger.info(f"  Details: {result['details']}")
+            else:
+                logger.error(f"  Error: {result['error']}")
+
+        return results
 
     def _load_events_calendar(self) -> List[Dict[str, Any]]:
         """Load real market events calendar from multiple sources with fallbacks"""
@@ -1452,6 +1548,7 @@ class PrecisionOptionsArbitrage:
         except Exception as e:
             logger.error(f"Error calculating edge: {e}")
             return 0.0  # No edge if calculation fails
+
 
     def _calculate_expected_return(self, option: Dict[str, Any], edge: float) -> Tuple[float, float]:
         """
