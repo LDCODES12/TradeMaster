@@ -1,0 +1,461 @@
+{
+  "system_info": {
+    "status": "success",
+    "details": {
+      "system_info": {
+        "os": "Darwin",
+        "python_version": "3.13.2",
+        "timestamp": "2025-03-14T00:48:13.953992",
+        "hostname": "MacBook-Air-60.local",
+        "cpu_count": 8,
+        "memory_available_gb": 3.15,
+        "disk_free_gb": 344.56,
+        "db_version": "PostgreSQL 14.17 (Homebrew) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit"
+      },
+      "health_checks": {
+        "sufficient_memory": true,
+        "sufficient_disk": true,
+        "cpu_count_adequate": true
+      },
+      "config_sections": [
+        "alpaca",
+        "finnhub",
+        "alphavantage",
+        "polygon",
+        "trading_system",
+        "risk_management",
+        "strategy",
+        "watchlist",
+        "database",
+        "notifications",
+        "email",
+        "slack"
+      ]
+    }
+  },
+  "config": {
+    "status": "success",
+    "details": {
+      "api_keys": {
+        "alpaca": {
+          "present": true,
+          "is_paper": true
+        },
+        "polygon": {
+          "present": true
+        },
+        "finnhub": {
+          "present": true,
+          "optional": true
+        },
+        "alphavantage": {
+          "present": true,
+          "optional": true
+        }
+      },
+      "required_keys_present": true
+    }
+  },
+  "database": {
+    "status": "partial",
+    "details": {
+      "connection": {
+        "status": "success",
+        "details": "Connected to PostgreSQL: PostgreSQL 14.17 (Homebrew) on aarch64-apple-darwin23.6.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.6), 64-bit"
+      },
+      "tables": {
+        "status": "success",
+        "details": {
+          "required_tables": [
+            "trades",
+            "portfolio_snapshots",
+            "risk_metrics",
+            "system_logs"
+          ],
+          "found_tables": {
+            "trades": {
+              "exists": true,
+              "column_count": 22,
+              "columns": {
+                "id": "integer",
+                "entry_time": "timestamp without time zone",
+                "exit_time": "timestamp without time zone",
+                "strike_price": "real",
+                "days_to_expiry": "integer",
+                "expected_roi": "real",
+                "profit_probability": "real",
+                "sharpe_ratio": "real",
+                "pnl": "real",
+                "pnl_percent": "real",
+                "entry_price": "real",
+                "exit_price": "real",
+                "quantity": "integer",
+                "symbol": "text",
+                "underlying": "text",
+                "trade_type": "text",
+                "exit_reason": "text",
+                "order_id": "text",
+                "event_type": "text",
+                "event_date": "text",
+                "status": "text",
+                "expiration": "text"
+              }
+            },
+            "portfolio_snapshots": {
+              "exists": true,
+              "column_count": 9,
+              "columns": {
+                "id": "integer",
+                "timestamp": "timestamp without time zone",
+                "account_value": "real",
+                "buying_power": "real",
+                "cash": "real",
+                "open_positions_count": "integer",
+                "open_positions_value": "real",
+                "daily_pnl": "real",
+                "daily_pnl_percent": "real"
+              }
+            },
+            "risk_metrics": {
+              "exists": true,
+              "column_count": 11,
+              "columns": {
+                "id": "integer",
+                "timestamp": "timestamp without time zone",
+                "var_95": "real",
+                "var_99": "real",
+                "max_drawdown": "real",
+                "sharpe_ratio": "real",
+                "sortino_ratio": "real",
+                "beta": "real",
+                "correlation_spy": "real",
+                "avg_win_loss_ratio": "real",
+                "win_rate": "real"
+              }
+            },
+            "system_logs": {
+              "exists": true,
+              "column_count": 5,
+              "columns": {
+                "id": "integer",
+                "timestamp": "timestamp without time zone",
+                "level": "text",
+                "component": "text",
+                "message": "text"
+              }
+            }
+          },
+          "all_exist": true
+        }
+      },
+      "operations": {
+        "status": "partial",
+        "details": {
+          "insert_success": true,
+          "read_success": false,
+          "test_id": 2
+        }
+      },
+      "connection_pool": {
+        "status": "success",
+        "details": {
+          "queries_executed": 5,
+          "unique_backends": 1,
+          "connection_reuse": true,
+          "backend_pids": [
+            60961
+          ]
+        }
+      }
+    }
+  },
+  "alpaca_api": {
+    "status": "success",
+    "details": {
+      "tests_run": 3,
+      "tests_successful": 3,
+      "results": {
+        "account": {
+          "status": "success",
+          "details": {
+            "account_number": "REDACTED",
+            "buying_power": 199978.64,
+            "equity": 99989.32,
+            "is_pattern_day_trader": false,
+            "is_paper": true
+          }
+        },
+        "market_data": {
+          "status": "success",
+          "details": {
+            "symbols_tested": 2,
+            "quotes_success": 2
+          }
+        },
+        "clock": {
+          "status": "success",
+          "details": {
+            "is_open": false,
+            "next_open": "2025-03-14 09:30:00-04:00",
+            "next_close": "2025-03-14 16:00:00-04:00"
+          }
+        }
+      }
+    }
+  },
+  "polygon_api": {
+    "status": "partial",
+    "details": {
+      "tests_run": 3,
+      "tests_successful": 2,
+      "results": {
+        "ticker_info": {
+          "status": "success",
+          "details": {
+            "name": "Apple Inc.",
+            "market_cap": 3149828266640.0,
+            "request_time_seconds": 0.1
+          }
+        },
+        "aggs": {
+          "status": "success",
+          "details": {
+            "results_count": 4,
+            "ticker": "AAPL",
+            "timespan": "1 day"
+          }
+        },
+        "last_quote": {
+          "status": "failed",
+          "error": "Status code: 403, Response: {\"status\":\"NOT_AUTHORIZED\",\"request_id\":\"21b9ee8188e29ace179e8f2378389212\",\"message\":\"You are not en"
+        }
+      }
+    }
+  },
+  "options_provider": {
+    "status": "failed",
+    "details": {
+      "tests_run": 5,
+      "tests_successful": 3,
+      "results": {
+        "first_call": {
+          "status": "failed",
+          "details": {
+            "symbol": "SPY",
+            "options_count": 0,
+            "time_taken": 120.66,
+            "sample": {}
+          }
+        },
+        "caching": {
+          "status": "warning",
+          "details": {
+            "first_call_time": 120.66,
+            "second_call_time": 132.0,
+            "speedup_factor": 0.91,
+            "cache_working": false
+          }
+        },
+        "price": {
+          "status": "success",
+          "details": {
+            "price": 554.26,
+            "time_taken": 0.0
+          }
+        },
+        "providers": {
+          "status": "success",
+          "details": {
+            "provider_preference": [
+              "polygon",
+              "alpaca"
+            ],
+            "polygon_available": true,
+            "alpaca_available": true
+          }
+        },
+        "rate_limiting": {
+          "status": "success",
+          "details": {
+            "polygon_calls_per_minute": 5,
+            "alpaca_calls_per_minute": 200,
+            "is_free_tier_compliant": true
+          }
+        }
+      }
+    }
+  },
+  "market_data": {
+    "status": "partial",
+    "details": {
+      "tests_run": 2,
+      "tests_successful": 1,
+      "results": {
+        "quotes": {
+          "status": "success",
+          "details": {
+            "symbols_tested": 2,
+            "quotes_success": 2,
+            "quotes_data": {
+              "SPY": {
+                "ask": 554.26,
+                "bid": 550.67,
+                "timestamp": "2025-03-13 20:59:55.007078+00:00"
+              },
+              "AAPL": {
+                "ask": 209.8,
+                "bid": 209.5,
+                "timestamp": "2025-03-13 19:59:59.930461+00:00"
+              }
+            }
+          }
+        },
+        "bars": {
+          "status": "failed",
+          "details": {
+            "symbols_tested": 2,
+            "bars_success": 0,
+            "timeframe": "Day",
+            "days_requested": 3,
+            "bars_data": {}
+          }
+        }
+      }
+    }
+  },
+  "risk_manager": {
+    "status": "success",
+    "details": {
+      "components_tested": 4,
+      "components_working": 4,
+      "risk_results": {
+        "circuit_breakers": {
+          "status": "success",
+          "details": {
+            "clear": true,
+            "reason": "Circuit breakers clear"
+          }
+        },
+        "position_sizing": {
+          "status": "success",
+          "details": {
+            "test_opportunity": {
+              "option": {
+                "symbol": "SPY240315C00430000",
+                "price": 5.25,
+                "strike": 430.0
+              },
+              "profit_probability": 0.6,
+              "event": {
+                "event_type": "earnings",
+                "symbol": "SPY",
+                "event_date": "2025-03-21"
+              }
+            },
+            "calculated_position_size": 9
+          }
+        },
+        "trade_approval": {
+          "status": "success",
+          "details": {
+            "approved": false,
+            "reason": "Trade exceeds risk budget based on Value-at-Risk"
+          }
+        },
+        "risk_metrics": {
+          "status": "success",
+          "details": {
+            "var_95": 0.0,
+            "sharpe_ratio": 0,
+            "win_rate": 0.0
+          }
+        }
+      }
+    }
+  },
+  "sentiment": {
+    "status": "success",
+    "details": {
+      "tests_run": 4,
+      "tests_successful": 2,
+      "results": {
+        "rate_limiting": {
+          "status": "success",
+          "details": {
+            "calls_per_minute": 5,
+            "is_free_tier_compliant": true
+          }
+        },
+        "caching": {
+          "status": "warning",
+          "details": {
+            "caching_configured": false
+          }
+        },
+        "sentiment_score": {
+          "status": "success",
+          "details": {
+            "symbol": "AAPL",
+            "score": 0.0,
+            "time_taken": 0.1
+          }
+        },
+        "caching_performance": {
+          "status": "warning",
+          "details": {
+            "first_call_time": 0.1,
+            "second_call_time": 11.93,
+            "speedup_factor": 0.01,
+            "cache_appears_functional": false
+          }
+        }
+      }
+    }
+  },
+  "stream_manager": {
+    "status": "success",
+    "details": {
+      "tests_run": 3,
+      "tests_successful": 3,
+      "results": {
+        "configuration": {
+          "status": "success",
+          "details": {
+            "disable_ssl_verification": false,
+            "calls_per_minute": null,
+            "is_running": false
+          }
+        },
+        "setup": {
+          "status": "success",
+          "details": {
+            "handlers_registered": true
+          }
+        },
+        "connection": {
+          "status": "success",
+          "details": {
+            "start_success": true
+          }
+        }
+      }
+    }
+  },
+  "trading": {
+    "status": "skipped",
+    "details": {
+      "reason": "execute_order=False (dry run)"
+    }
+  },
+  "summary": {
+    "timestamp": "2025-03-14T00:53:09.564531",
+    "tests_passed": 6,
+    "tests_run": 11,
+    "critical_components_status": {
+      "database": "partial",
+      "alpaca_api": "success",
+      "options_provider": "failed",
+      "market_data": "partial"
+    }
+  }
+}

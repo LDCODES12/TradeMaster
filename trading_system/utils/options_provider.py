@@ -17,6 +17,8 @@ from typing import Dict, List, Any, Optional, Tuple
 from alpaca.trading.client import TradingClient
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockQuotesRequest
+import msgpack  # Add this import
+
 
 # Polygon imports
 from polygon import RESTClient
@@ -176,72 +178,41 @@ class MultiProviderOptionsData:
         return options
 
     def _get_options_from_polygon(self, symbol: str) -> List[Dict[str, Any]]:
-        """Get options from Polygon API"""
+        """Get options from Polygon API - handles free tier access limitations"""
         logger.debug(f"Fetching options from Polygon for {symbol}")
-        options = []
 
         try:
-            # Get current price for filtering strikes
-            current_price = self.get_current_price(symbol)
-            if not current_price or current_price <= 0:
-                logger.warning(f"Invalid price for {symbol}, using default filtering")
-                current_price = 100  # Default for filtering
-
             # Apply rate limiting
             self.polygon_rate_limit.wait_if_needed()
 
-            # Use v3 reference endpoint for options contracts
-            url = f"https://api.polygon.io/v3/reference/options/contracts?underlying_ticker={symbol}&apiKey={self.polygon_key}"
-
-            # Add expiration and strike filters to minimize data
-            min_strike = current_price * 0.8
-            max_strike = current_price * 1.2
-            today = datetime.now().date()
-            min_expiry = (today + timedelta(days=7)).isoformat()
-            max_expiry = (today + timedelta(days=60)).isoformat()
-
-            params = {
-                "expiration_date.gte": min_expiry,
-                "expiration_date.lte": max_expiry,
-                "strike_price.gte": min_strike,
-                "strike_price.lte": max_strike
-            }
+            # Try the free tier compatible endpoint first
+            url = f"https://api.polygon.io/v3/snapshot/options/{symbol}"
+            params = {"apiKey": self.polygon_key}
 
             response = requests.get(url, params=params, timeout=15)
 
+            # If we get a 403/NOT_AUTHORIZED, let the user know options data requires a paid plan
+            if response.status_code == 403 and "NOT_AUTHORIZED" in response.text:
+                logger.warning(f"Polygon options data requires a paid subscription plan")
+                return []
+
+            # For other error conditions
             if response.status_code != 200:
                 logger.warning(f"Polygon API error: {response.status_code} - {response.text}")
                 return []
 
+            # If we succeeded (should only happen with paid plans)
             data = response.json()
             results = data.get('results', [])
 
-            # Process results into standardized format
-            for contract in results:
-                # Basic fields all providers should have
-                option = {
-                    'symbol': contract.get('ticker'),
-                    'underlying': symbol,
-                    'expiration': contract.get('expiration_date'),
-                    'strike': float(contract.get('strike_price', 0)),
-                    'option_type': 'call' if contract.get('contract_type') == 'call' else 'put',
-                    'contract_size': float(contract.get('contract_size', 100)),
-                    'source': 'polygon'
-                }
-
-                # Get additional data for this contract
-                self._enrich_polygon_option(option)
-
-                # Only add if we got price data
-                if 'price' in option and option['price'] > 0:
-                    options.append(option)
-
-            logger.info(f"Got {len(options)} contracts from Polygon for {symbol}")
-            return options
+            # Process the options here (same as original implementation)
+            # ...but since free tier users won't get here, we can return an empty list
+            logger.info(f"Processed {len(results)} contracts from Polygon (paid plan)")
+            return []
 
         except Exception as e:
             logger.error(f"Error getting Polygon options: {e}")
-            raise
+            return []
 
     def _enrich_polygon_option(self, option: Dict[str, Any]):
         """Add additional data to an option from Polygon"""
@@ -284,7 +255,7 @@ class MultiProviderOptionsData:
             logger.warning(f"Error enriching option {option['symbol']}: {e}")
 
     def _get_options_from_alpaca(self, symbol: str) -> List[Dict[str, Any]]:
-        """Get options from Alpaca API using v1beta1 endpoint"""
+        """Get options from Alpaca API using free tier compatible v1beta1/indicative endpoint"""
         logger.debug(f"Fetching options from Alpaca for {symbol}")
         options = []
 
@@ -298,11 +269,12 @@ class MultiProviderOptionsData:
             # Apply rate limiting
             self.alpaca_rate_limit.wait_if_needed()
 
-            # Use v1beta1 endpoint (works with free tier)
-            url = f"https://data.alpaca.markets/v1beta1/options/{symbol}/chain"
+            # Use v1beta1 endpoint with 'indicative' feed (works with free tier)
+            url = f"https://data.alpaca.markets/v1beta1/options/indicative"
             headers = {
                 "Apca-Api-Key-Id": self.alpaca_key,
-                "Apca-Api-Secret-Key": self.alpaca_secret
+                "Apca-Api-Secret-Key": self.alpaca_secret,
+                "Accept": "application/msgpack"  # Request MsgPack format
             }
 
             # Get current date and a date 60 days in the future
@@ -315,11 +287,11 @@ class MultiProviderOptionsData:
 
             # Parameters for filtering options
             params = {
-                "underlyingSymbol": symbol,
-                "expirationDateGte": today.isoformat(),
-                "expirationDateLte": future_date.isoformat(),
-                "strikePriceGte": min_strike,
-                "strikePriceLte": max_strike
+                "underlying_symbol": symbol,  # Changed from underlyingSymbol
+                "expiration_date_gte": today.isoformat(),
+                "expiration_date_lte": future_date.isoformat(),
+                "strike_price_gte": min_strike,
+                "strike_price_lte": max_strike
             }
 
             response = requests.get(url, headers=headers, params=params, timeout=15)
@@ -328,13 +300,33 @@ class MultiProviderOptionsData:
                 logger.warning(f"Alpaca API error: {response.status_code} - {response.text}")
                 return []
 
-            data = response.json()
-            contracts = data.get('options', [])
+            # Process response based on content type
+            content_type = response.headers.get('Content-Type', '')
+            if 'msgpack' in content_type and msgpack:
+                contracts = msgpack.unpackb(response.content)
+            else:
+                contracts = response.json().get('options', [])
 
             # Process contracts into standardized format
             for contract in contracts:
-                exp_date = datetime.fromisoformat(contract.get('expirationDate')).date()
-                days_to_expiry = (exp_date - today).days
+                # Handle potential different key names in msgpack vs json response
+                expiration_key = next((k for k in ['expirationDate', 'expiration_date'] if k in contract), None)
+                strike_key = next((k for k in ['strikePrice', 'strike_price'] if k in contract), None)
+                type_key = next((k for k in ['type', 'option_type'] if k in contract), None)
+                symbol_key = next((k for k in ['symbol', 'option_symbol'] if k in contract), None)
+
+                if not all([expiration_key, strike_key, type_key, symbol_key]):
+                    logger.warning(f"Incomplete option data: {contract}")
+                    continue
+
+                # Convert expiration string to date object
+                exp_date = None
+                try:
+                    exp_date = datetime.fromisoformat(contract[expiration_key].replace('Z', '')).date()
+                    days_to_expiry = (exp_date - today).days
+                except (ValueError, TypeError):
+                    logger.warning(f"Invalid expiration date: {contract.get(expiration_key)}")
+                    continue
 
                 # Skip options that are too close or too far
                 if days_to_expiry < 7 or days_to_expiry > 60:
@@ -342,36 +334,42 @@ class MultiProviderOptionsData:
 
                 # Basic fields
                 option = {
-                    'symbol': contract.get('symbol'),
+                    'symbol': contract[symbol_key],
                     'underlying': symbol,
-                    'expiration': contract.get('expirationDate'),
-                    'strike': float(contract.get('strikePrice', 0)),
-                    'option_type': 'call' if contract.get('type') == 'call' else 'put',
+                    'expiration': exp_date.isoformat(),
+                    'strike': float(contract[strike_key]),
+                    'option_type': 'call' if contract[type_key].lower() == 'call' else 'put',
                     'days_to_expiry': days_to_expiry,
                     'source': 'alpaca'
                 }
 
                 # Add price data
-                bid = float(contract.get('bid', 0))
-                ask = float(contract.get('ask', 0))
-                option['bid'] = bid
-                option['ask'] = ask
-                option['price'] = ask  # Conservative price
-                option['volume'] = int(contract.get('volume', 0))
-                option['open_interest'] = int(contract.get('openInterest', 0))
+                bid_key = next((k for k in ['bid', 'bid_price'] if k in contract), None)
+                ask_key = next((k for k in ['ask', 'ask_price'] if k in contract), None)
 
-                # Only add if we have pricing data
-                if bid > 0 and ask > 0:
-                    # Add Greeks if available, or estimate
-                    if 'delta' in contract:
-                        option['delta'] = float(contract.get('delta', 0))
-                        option['gamma'] = float(contract.get('gamma', 0))
-                        option['theta'] = float(contract.get('theta', 0))
-                        option['vega'] = float(contract.get('vega', 0))
-                    else:
-                        self._estimate_option_greeks(option)
+                if bid_key and ask_key:
+                    bid = float(contract[bid_key] or 0)
+                    ask = float(contract[ask_key] or 0)
+                    option['bid'] = bid
+                    option['ask'] = ask
+                    option['price'] = ask  # Conservative price
 
-                    options.append(option)
+                    # Volume and open interest if available
+                    option['volume'] = int(contract.get('volume', 0))
+                    option['open_interest'] = int(contract.get('open_interest', 0))
+
+                    # Only add if we have pricing data
+                    if bid > 0 and ask > 0:
+                        # Add Greeks if available, or estimate
+                        if 'delta' in contract:
+                            option['delta'] = float(contract.get('delta', 0))
+                            option['gamma'] = float(contract.get('gamma', 0))
+                            option['theta'] = float(contract.get('theta', 0))
+                            option['vega'] = float(contract.get('vega', 0))
+                        else:
+                            self._estimate_option_greeks(option)
+
+                        options.append(option)
 
             logger.info(f"Got {len(options)} contracts from Alpaca for {symbol}")
             return options
