@@ -35,15 +35,23 @@ def create_dashboard(trading_system):
     col2.metric("Trading", "Active" if status['trading_active'] else "Inactive")
     col3.metric("Market", "Open" if status['market_open'] else "Closed")
 
-    # Trading controls
-    if status['trading_active']:
+    # Trading controls - With session state persistence
+    if 'trading_active' not in st.session_state:
+        st.session_state.trading_active = status['trading_active']
+
+    if st.session_state.trading_active:
         if st.sidebar.button("Stop Trading", key="stop_trading"):
             trading_system.stop_trading("User requested stop via dashboard")
+            st.session_state.trading_active = False
             st.sidebar.success("Trading stopped successfully")
     else:
         if st.sidebar.button("Start Trading", key="start_trading"):
             trading_system.start_trading()
+            st.session_state.trading_active = True
             st.sidebar.success("Trading started successfully")
+
+    # Display the current state (useful for debugging)
+    st.sidebar.text(f"Session trading state: {'Active' if st.session_state.trading_active else 'Inactive'}")
 
     # Manual actions
     st.sidebar.subheader("Manual Actions")
