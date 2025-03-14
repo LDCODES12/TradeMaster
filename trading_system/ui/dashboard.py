@@ -10,6 +10,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 from typing import Dict, Any
+from utils.sentiment_dashboard import add_sentiment_dashboard
+
 
 logger = logging.getLogger(__name__)
 
@@ -53,6 +55,7 @@ def create_dashboard(trading_system):
     # Display the current state (useful for debugging)
     st.sidebar.text(f"Session trading state: {'Active' if st.session_state.trading_active else 'Inactive'}")
 
+
     # Manual actions
     st.sidebar.subheader("Manual Actions")
 
@@ -86,7 +89,7 @@ def create_dashboard(trading_system):
     st.sidebar.subheader("Dashboard Views")
     dashboard_view = st.sidebar.radio(
         "Select Dashboard",
-        ["Overview", "Positions", "Performance", "Risk Analysis", "System Status"]
+        ["Overview", "Positions", "Performance", "Risk Analysis", "Sentiment Analysis", "System Status"]
     )
 
     # Main content area
@@ -103,6 +106,8 @@ def create_dashboard(trading_system):
         show_risk_dashboard(trading_system)
     elif dashboard_view == "System Status":
         show_system_dashboard(trading_system)
+    elif dashboard_view == "Sentiment Analysis":
+        add_sentiment_dashboard(trading_system)
 
 
 def show_overview_dashboard(trading_system):

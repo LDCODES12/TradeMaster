@@ -24,6 +24,9 @@ from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
+from utils.sentiment_analyzer import NewsSentimentAnalyzer
+from utils.sentiment_strategy import SentimentEnhancedStrategy
+
 
 
 # Initialize logger and timezone
@@ -109,6 +112,26 @@ class TradingSystem:
         self._setup_system()
 
         self.market_data_stream_manager = None
+
+        # Initialize sentiment analyzer
+        if 'polygon' in self.config and 'api_key' in self.config['polygon']:
+            self.sentiment_analyzer = NewsSentimentAnalyzer(
+                self.config['polygon']['api_key'],
+                calls_per_minute=5  # Free tier limit
+            )
+            logger.info("Sentiment analyzer initialized")
+        else:
+            self.sentiment_analyzer = None
+            logger.warning("Polygon API key not found, sentiment analysis disabled")
+
+        # Initialize sentiment-enhanced strategy
+        if self.sentiment_analyzer:
+            self.sentiment_strategy = SentimentEnhancedStrategy(
+                self.strategy,
+                self.sentiment_analyzer,
+                self.config.get('strategy', {})
+            )
+            logger.info("Sentiment-enhanced strategy initialized")
 
 
     def _setup_system(self):
@@ -498,11 +521,39 @@ class TradingSystem:
                     f"Maximum positions reached ({len(open_positions)}/{max_positions}), skipping opportunity analysis")
                 return
 
-            # Find new opportunities
+            # Find new opportunities with sentiment enhancement if available
             min_sharpe = float(self.config.get('trading_system', {}).get('min_sharpe', 0.25))
 
-            # Analyze opportunities using the strategy
-            opportunities = self.strategy.analyze_opportunities(min_sharpe=min_sharpe)
+            # Determine whether to use sentiment-enhanced strategy
+            if hasattr(self, 'sentiment_analyzer') and self.sentiment_analyzer and hasattr(self, 'sentiment_strategy'):
+                # Build watchlist for sentiment analysis
+                watchlist = []
+
+                # Add symbols from open positions
+                for position in open_positions:
+                    underlying = position.get('underlying', '')
+                    if underlying and underlying not in watchlist:
+                        watchlist.append(underlying)
+
+                # Add additional symbols from configuration
+                if 'watchlist' in self.config:
+                    for symbol in self.config['watchlist']:
+                        if symbol not in watchlist:
+                            watchlist.append(symbol)
+
+                # Limit to a reasonable number for API constraints
+                watchlist = watchlist[:20]
+
+                if watchlist:
+                    logger.info(f"Analyzing {len(watchlist)} symbols with sentiment enhancement")
+                    opportunities = self.sentiment_strategy.analyze_opportunities(watchlist)
+                else:
+                    logger.warning("No symbols in watchlist for sentiment analysis")
+                    # Fall back to regular strategy
+                    opportunities = self.strategy.analyze_opportunities(min_sharpe=min_sharpe)
+            else:
+                # Use regular strategy without sentiment
+                opportunities = self.strategy.analyze_opportunities(min_sharpe=min_sharpe)
 
             self.daily_stats['opportunities_analyzed'] += len(opportunities)
 
@@ -523,8 +574,11 @@ class TradingSystem:
                 logger.info("No opportunities approved by risk management")
                 return
 
-            # Sort by Sharpe ratio
-            approved_opportunities.sort(key=lambda x: x['sharpe_ratio'], reverse=True)
+            # Sort by opportunity score if available, otherwise by Sharpe ratio
+            if approved_opportunities and 'opportunity_score' in approved_opportunities[0]:
+                approved_opportunities.sort(key=lambda x: x['opportunity_score'], reverse=True)
+            else:
+                approved_opportunities.sort(key=lambda x: x['sharpe_ratio'], reverse=True)
 
             # Execute trades
             positions_to_add = max_positions - len(open_positions)
